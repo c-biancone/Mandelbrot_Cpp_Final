@@ -1,0 +1,4 @@
+C:\Users\Chris\AppData\Local\JetBrains\CLion2021.3\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/cygdrive/c/Program Files/JetBrains/CLion 2020.1/bin/ninja/cygwin/ninja.exe" -G Ninja /cygdrive/d/Documents/RIT/Semester_4/C++/Final
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/d/Documents/RIT/Semester_4/C++/Final/cmake-build-debug

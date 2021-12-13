@@ -1,0 +1,14 @@
+# ninja log v5
+98	3399	1639434136982036500	CMakeFiles/C__.dir/ThreadPool.cpp.o	4e928015b864840d
+9	2259	1639438184801340000	CMakeFiles/C__.dir/ThreadPoolTest.cpp.o	db5b8f1efde4d39d
+56	1306	1639434134924296500	CMakeFiles/C__.dir/LineColor.cpp.o	70a0603d0c2af82c
+16	3133	1639435462701997200	CMakeFiles/C__.dir/PPM.cpp.o	ce5d255d5ff46a49
+33	1335	1639434134922301900	CMakeFiles/C__.dir/Colorization.cpp.o	2f4a12ad9daaafdf
+48	1305	1639434134887883500	CMakeFiles/C__.dir/InsideColor.cpp.o	dbeb78213f6b9c76
+73	1848	1639434135472829200	CMakeFiles/C__.dir/NormalMap.cpp.o	a967043d63e69a5c
+86	1910	1639434135489783000	CMakeFiles/C__.dir/Neumorphic.cpp.o	22ace8bc3d05706a
+64	1909	1639434135500754200	CMakeFiles/C__.dir/Striping.cpp.o	440e2b427faf3293
+40	1335	1639434134928285600	CMakeFiles/C__.dir/Shading.cpp.o	1ba0915deca1bda0
+25	2696	1639434136275919200	CMakeFiles/C__.dir/Mandelbrot.cpp.o	55e35776f2ff08fe
+2260	3115	1639438185618251400	C__.exe	a6827e0fa8b5b6a9
+11	2669	1639437767454397600	CMakeFiles/C__.dir/main.cpp.o	8b2a1f1e886b3bcd
