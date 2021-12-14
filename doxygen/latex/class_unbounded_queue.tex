@@ -1,0 +1,471 @@
+\hypertarget{class_unbounded_queue}{}\doxysection{Unbounded\+Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_unbounded_queue}\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Unbounded\+Queue.\+h$>$}
+
+
+
+Collaboration diagram for Unbounded\+Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_unbounded_queue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_unbounded_queue_a64f35886dd3aea8d1c1e13a1f0e577f5}{Unbounded\+Queue}} (bool \mbox{\hyperlink{class_unbounded_queue_ab8e12d03cadab3d25ec92cbd381e4e5b}{block}}=true)
+\item 
+\mbox{\hyperlink{class_unbounded_queue_a4d177eb3f7ffea560e7bf7afc7aea8fe}{$\sim$\+Unbounded\+Queue}} ()
+\item 
+void \mbox{\hyperlink{class_unbounded_queue_a751bc9ee8b3d0d9387a69becd1c48025}{push}} (const T \&item)
+\item 
+void \mbox{\hyperlink{class_unbounded_queue_a3e0c53f08e77b38e3930603487a65d23}{push}} (T \&\&item)
+\item 
+{\footnotesize template$<$typename... ARGS$>$ }\\void \mbox{\hyperlink{class_unbounded_queue_ab7a5902dbee350905953d818f349923a}{emplace}} (ARGS \&\&... args)
+\item 
+bool \mbox{\hyperlink{class_unbounded_queue_a879ba042d86ad80edb0a401f3f83743e}{try\+\_\+push}} (const T \&item)
+\item 
+bool \mbox{\hyperlink{class_unbounded_queue_ade9c3b3b3c65c1d4403b788d737d03eb}{try\+\_\+push}} (T \&\&item)
+\item 
+bool \mbox{\hyperlink{class_unbounded_queue_a544965906abc2d4ee1c7ba92a2f6b3c5}{pop}} (T \&item)
+\item 
+bool \mbox{\hyperlink{class_unbounded_queue_a357b5509c66e74c7e2ff7962dde2ccc6}{try\+\_\+pop}} (T \&item)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_unbounded_queue_a184aa204897297c08d4eea3ed53aef5f}{size}} () const
+\item 
+bool \mbox{\hyperlink{class_unbounded_queue_a9fa18dd98fc70adcb1265e233248686a}{empty}} () const
+\item 
+void \mbox{\hyperlink{class_unbounded_queue_ab8e12d03cadab3d25ec92cbd381e4e5b}{block}} ()
+\item 
+void \mbox{\hyperlink{class_unbounded_queue_a3b156091dea7956e979290c4a326d405}{unblock}} ()
+\item 
+bool \mbox{\hyperlink{class_unbounded_queue_a67ae20d34211e302fa1b3ebc0b965c82}{blocking}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_unbounded_queue_aa872b6f54d9f18da56f6298d6f06d384}{queue\+\_\+t}} = std\+::queue$<$ T $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_unbounded_queue_aa872b6f54d9f18da56f6298d6f06d384}{queue\+\_\+t}} \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}
+\item 
+bool \mbox{\hyperlink{class_unbounded_queue_ad1553b1b0537433dcaeb72e727ab7c25}{is\+\_\+block}}
+\item 
+std\+::mutex \mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queue\+Lock}}
+\item 
+std\+::condition\+\_\+variable \mbox{\hyperlink{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}{condition}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Unbounded\+Queue$<$ T $>$}
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00011}{11}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_unbounded_queue_aa872b6f54d9f18da56f6298d6f06d384}\label{class_unbounded_queue_aa872b6f54d9f18da56f6298d6f06d384}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!queue\_t@{queue\_t}}
+\index{queue\_t@{queue\_t}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{queue\_t}{queue\_t}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::\mbox{\hyperlink{class_unbounded_queue_aa872b6f54d9f18da56f6298d6f06d384}{queue\+\_\+t}} =  std\+::queue$<$T$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00065}{65}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_unbounded_queue_a64f35886dd3aea8d1c1e13a1f0e577f5}\label{class_unbounded_queue_a64f35886dd3aea8d1c1e13a1f0e577f5}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!UnboundedQueue@{UnboundedQueue}}
+\index{UnboundedQueue@{UnboundedQueue}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UnboundedQueue()}{UnboundedQueue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::\mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}} (\begin{DoxyParamCaption}\item[{bool}]{block = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Default Parametrized constructor 
+\begin{DoxyParams}{Parameters}
+{\em block} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00077}{77}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00077}00077                                             : \mbox{\hyperlink{class_unbounded_queue_ad1553b1b0537433dcaeb72e727ab7c25}{is\_block}}(\mbox{\hyperlink{class_unbounded_queue_ab8e12d03cadab3d25ec92cbd381e4e5b}{block}})}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00078}00078 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a4d177eb3f7ffea560e7bf7afc7aea8fe}\label{class_unbounded_queue_a4d177eb3f7ffea560e7bf7afc7aea8fe}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!````~UnboundedQueue@{$\sim$UnboundedQueue}}
+\index{````~UnboundedQueue@{$\sim$UnboundedQueue}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$UnboundedQueue()}{~UnboundedQueue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default deconstructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_unbounded_queue_ab8e12d03cadab3d25ec92cbd381e4e5b}\label{class_unbounded_queue_ab8e12d03cadab3d25ec92cbd381e4e5b}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!block@{block}}
+\index{block@{block}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{block()}{block()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::block}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00183}{183}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00184}00184 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00185}00185   std::scoped\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00186}00186   \mbox{\hyperlink{class_unbounded_queue_ad1553b1b0537433dcaeb72e727ab7c25}{is\_block}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00187}00187 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a67ae20d34211e302fa1b3ebc0b965c82}\label{class_unbounded_queue_a67ae20d34211e302fa1b3ebc0b965c82}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!blocking@{blocking}}
+\index{blocking@{blocking}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{blocking()}{blocking()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::blocking}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00200}{200}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00201}00201 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00202}00202   std::scoped\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00203}00203   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_unbounded_queue_ad1553b1b0537433dcaeb72e727ab7c25}{is\_block}};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00204}00204 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_ab7a5902dbee350905953d818f349923a}\label{class_unbounded_queue_ab7a5902dbee350905953d818f349923a}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!emplace@{emplace}}
+\index{emplace@{emplace}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{emplace()}{emplace()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename... ARGS$>$ \\
+void \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::emplace (\begin{DoxyParamCaption}\item[{ARGS \&\&...}]{args }\end{DoxyParamCaption})}
+
+Emplace 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Args} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00102}{102}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00103}00103 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00104}00104   \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00105}00105     std::scoped\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00106}00106     \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.emplace(std::forward<>(args)...);}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00107}00107   \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00108}00108   \mbox{\hyperlink{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}{condition}}.notify\_one();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00109}00109 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a9fa18dd98fc70adcb1265e233248686a}\label{class_unbounded_queue_a9fa18dd98fc70adcb1265e233248686a}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::empty}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00176}{176}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00177}00177 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00178}00178   std::scoped\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00179}00179   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.empty();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00180}00180 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a544965906abc2d4ee1c7ba92a2f6b3c5}\label{class_unbounded_queue_a544965906abc2d4ee1c7ba92a2f6b3c5}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!pop@{pop}}
+\index{pop@{pop}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::pop (\begin{DoxyParamCaption}\item[{T \&}]{item }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00142}{142}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00143}00143 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00144}00144   std::unique\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00145}00145   \mbox{\hyperlink{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}{condition}}.wait(guard, [\&] () \{\textcolor{keywordflow}{return} !\mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.empty() || !\mbox{\hyperlink{class_unbounded_queue_ad1553b1b0537433dcaeb72e727ab7c25}{is\_block}};\});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00146}00146   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.empty())}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00147}00147   \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00148}00148     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00149}00149   \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00150}00150   item = std::move(\mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.front());}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00151}00151   \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.pop();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00152}00152   \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00153}00153 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a751bc9ee8b3d0d9387a69becd1c48025}\label{class_unbounded_queue_a751bc9ee8b3d0d9387a69becd1c48025}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!push@{push}}
+\index{push@{push}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{const T \&}]{item }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & -\/ const reference \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00081}{81}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00082}00082 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00083}00083   \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00084}00084     std::scoped\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00085}00085     \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.push(item);}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00086}00086   \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00087}00087   \mbox{\hyperlink{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}{condition}}.notify\_one();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00088}00088 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a3e0c53f08e77b38e3930603487a65d23}\label{class_unbounded_queue_a3e0c53f08e77b38e3930603487a65d23}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!push@{push}}
+\index{push@{push}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{T \&\&}]{item }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & -\/ double reference \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00091}{91}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00092}00092 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00093}00093   \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00094}00094     std::scoped\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00095}00095     \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.push(std::move(item));}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00096}00096   \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00097}00097   \mbox{\hyperlink{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}{condition}}.notify\_one();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00098}00098 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a184aa204897297c08d4eea3ed53aef5f}\label{class_unbounded_queue_a184aa204897297c08d4eea3ed53aef5f}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!size@{size}}
+\index{size@{size}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::size}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00169}{169}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00170}00170 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00171}00171   std::scoped\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00172}00172   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.size();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00173}00173 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a357b5509c66e74c7e2ff7962dde2ccc6}\label{class_unbounded_queue_a357b5509c66e74c7e2ff7962dde2ccc6}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!try\_pop@{try\_pop}}
+\index{try\_pop@{try\_pop}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{try\_pop()}{try\_pop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::try\+\_\+pop (\begin{DoxyParamCaption}\item[{T \&}]{item }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00156}{156}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00157}00157 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00158}00158   std::unique\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}}, std::try\_to\_lock);}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00159}00159   \textcolor{keywordflow}{if} (!guard || \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.empty())}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00160}00160   \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00161}00161     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00162}00162   \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00163}00163   item = std::move(\mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.front());}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00164}00164   \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.pop();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00165}00165   \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00166}00166 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a879ba042d86ad80edb0a401f3f83743e}\label{class_unbounded_queue_a879ba042d86ad80edb0a401f3f83743e}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!try\_push@{try\_push}}
+\index{try\_push@{try\_push}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{try\_push()}{try\_push()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::try\+\_\+push (\begin{DoxyParamCaption}\item[{const T \&}]{item }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00112}{112}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00113}00113 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00114}00114   \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00115}00115     std::unique\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}}, std::try\_to\_lock);}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00116}00116     \textcolor{keywordflow}{if} (!guard)}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00117}00117     \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00118}00118       \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00119}00119     \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00120}00120     \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.push(item);}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00121}00121   \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00122}00122   \mbox{\hyperlink{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}{condition}}.notify\_one();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00123}00123   \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00124}00124 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_ade9c3b3b3c65c1d4403b788d737d03eb}\label{class_unbounded_queue_ade9c3b3b3c65c1d4403b788d737d03eb}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!try\_push@{try\_push}}
+\index{try\_push@{try\_push}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{try\_push()}{try\_push()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::try\+\_\+push (\begin{DoxyParamCaption}\item[{T \&\&}]{item }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00127}{127}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00128}00128 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00129}00129   \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00130}00130     std::unique\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}}, std::try\_to\_lock);}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00131}00131     \textcolor{keywordflow}{if} (!guard)}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00132}00132     \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00133}00133       \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00134}00134     \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00135}00135     \mbox{\hyperlink{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}{queue}}.push(std::move(item));}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00136}00136   \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00137}00137   \mbox{\hyperlink{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}{condition}}.notify\_one();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00138}00138   \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00139}00139 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unbounded_queue_a3b156091dea7956e979290c4a326d405}\label{class_unbounded_queue_a3b156091dea7956e979290c4a326d405}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!unblock@{unblock}}
+\index{unblock@{unblock}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{unblock()}{unblock()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::unblock}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00190}{190}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00191}00191 \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00192}00192   \{}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00193}00193     std::scoped\_lock guard(\mbox{\hyperlink{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}{queueLock}});}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00194}00194     \mbox{\hyperlink{class_unbounded_queue_ad1553b1b0537433dcaeb72e727ab7c25}{is\_block}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00195}00195   \}}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00196}00196   \mbox{\hyperlink{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}{condition}}.notify\_all();}
+\DoxyCodeLine{\Hypertarget{class_unbounded_queue_l00197}00197 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_unbounded_queue_a3b156091dea7956e979290c4a326d405_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}\label{class_unbounded_queue_aa0208f870dd5c53a424f26fcd5c72d1f}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!condition@{condition}}
+\index{condition@{condition}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{condition}{condition}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::condition\+\_\+variable \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::condition\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00072}{72}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+\mbox{\Hypertarget{class_unbounded_queue_ad1553b1b0537433dcaeb72e727ab7c25}\label{class_unbounded_queue_ad1553b1b0537433dcaeb72e727ab7c25}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!is\_block@{is\_block}}
+\index{is\_block@{is\_block}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{is\_block}{is\_block}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::is\+\_\+block\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00068}{68}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+\mbox{\Hypertarget{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}\label{class_unbounded_queue_a752e9f95136ff46a05bba19588d0876c}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!queue@{queue}}
+\index{queue@{queue}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{queue}{queue}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_unbounded_queue_aa872b6f54d9f18da56f6298d6f06d384}{queue\+\_\+t}} \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::queue\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00066}{66}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+\mbox{\Hypertarget{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}\label{class_unbounded_queue_afa869ceab5e79a58253c810df5028ae9}} 
+\index{UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}!queueLock@{queueLock}}
+\index{queueLock@{queueLock}!UnboundedQueue$<$ T $>$@{UnboundedQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{queueLock}{queueLock}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::mutex \mbox{\hyperlink{class_unbounded_queue}{Unbounded\+Queue}}$<$ T $>$\+::queue\+Lock\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_unbounded_queue_8h_source_l00070}{70}} of file \mbox{\hyperlink{_unbounded_queue_8h_source}{Unbounded\+Queue.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Final/\+Mandelbrot\+\_\+\+Cpp\+\_\+\+Final/src/\mbox{\hyperlink{_unbounded_queue_8h}{Unbounded\+Queue.\+h}}\end{DoxyCompactItemize}

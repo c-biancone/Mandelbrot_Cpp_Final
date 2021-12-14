@@ -1,0 +1,170 @@
+\hypertarget{class_colorization}{}\doxysection{Colorization Class Reference}
+\label{class_colorization}\index{Colorization@{Colorization}}
+
+
+{\ttfamily \#include $<$Colorization.\+h$>$}
+
+
+
+Inheritance diagram for Colorization\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_colorization__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Colorization\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{class_colorization__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_colorization_a57128b59c3e03984b5215f210681bb28}{get\+\_\+type}} ()
+\item 
+virtual unsigned char \mbox{\hyperlink{class_colorization_a7a71ce1eec32252974a44899085a7f6c}{get\+\_\+max\+\_\+color\+\_\+value}} ()=0
+\item 
+virtual unsigned char \mbox{\hyperlink{class_colorization_a6986d4b32c0075d14c221818264ecf98}{get\+\_\+min\+\_\+color\+\_\+value}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_colorization_aefb999441f76dfcd1425a95bb16a9272}{$\sim$\+Colorization}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_colorization_a8f4eabab5a9173658b697f2642b3e055}{Colorization}} (std\+::string \mbox{\hyperlink{class_colorization_a61437409415c7a8dbcb3f7bc13bf6dc8}{type}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_colorization_a61437409415c7a8dbcb3f7bc13bf6dc8}{type}}
+\item 
+const unsigned char \mbox{\hyperlink{class_colorization_a25d52680a30cf9fd472559baf93298c2}{max\+Color\+Value}} = 255
+\item 
+const unsigned char \mbox{\hyperlink{class_colorization_a0b1052e2f8bd9d53f66ffdb3de1fb24b}{min\+Color\+Value}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_colorization_8h_source_l00006}{6}} of file \mbox{\hyperlink{_colorization_8h_source}{Colorization.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_colorization_aefb999441f76dfcd1425a95bb16a9272}\label{class_colorization_aefb999441f76dfcd1425a95bb16a9272}} 
+\index{Colorization@{Colorization}!````~Colorization@{$\sim$Colorization}}
+\index{````~Colorization@{$\sim$Colorization}!Colorization@{Colorization}}
+\doxysubsubsection{\texorpdfstring{$\sim$Colorization()}{~Colorization()}}
+{\footnotesize\ttfamily Colorization\+::$\sim$\+Colorization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_colorization_a8f4eabab5a9173658b697f2642b3e055}\label{class_colorization_a8f4eabab5a9173658b697f2642b3e055}} 
+\index{Colorization@{Colorization}!Colorization@{Colorization}}
+\index{Colorization@{Colorization}!Colorization@{Colorization}}
+\doxysubsubsection{\texorpdfstring{Colorization()}{Colorization()}}
+{\footnotesize\ttfamily Colorization\+::\+Colorization (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+Parametrized constructor 
+\begin{DoxyParams}{Parameters}
+{\em type} & of colorization \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_colorization_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_colorization_8cpp_source}{Colorization.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_colorization_l00007}00007                                       : \mbox{\hyperlink{class_colorization_a61437409415c7a8dbcb3f7bc13bf6dc8}{type}}(std::move(\mbox{\hyperlink{class_colorization_a61437409415c7a8dbcb3f7bc13bf6dc8}{type}}))}
+\DoxyCodeLine{\Hypertarget{class_colorization_l00008}00008 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_colorization_a7a71ce1eec32252974a44899085a7f6c}\label{class_colorization_a7a71ce1eec32252974a44899085a7f6c}} 
+\index{Colorization@{Colorization}!get\_max\_color\_value@{get\_max\_color\_value}}
+\index{get\_max\_color\_value@{get\_max\_color\_value}!Colorization@{Colorization}}
+\doxysubsubsection{\texorpdfstring{get\_max\_color\_value()}{get\_max\_color\_value()}}
+{\footnotesize\ttfamily virtual unsigned char Colorization\+::get\+\_\+max\+\_\+color\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_shading_af1504ee98e115b801c2a1341c21241fb}{Shading}}.
+
+\mbox{\Hypertarget{class_colorization_a6986d4b32c0075d14c221818264ecf98}\label{class_colorization_a6986d4b32c0075d14c221818264ecf98}} 
+\index{Colorization@{Colorization}!get\_min\_color\_value@{get\_min\_color\_value}}
+\index{get\_min\_color\_value@{get\_min\_color\_value}!Colorization@{Colorization}}
+\doxysubsubsection{\texorpdfstring{get\_min\_color\_value()}{get\_min\_color\_value()}}
+{\footnotesize\ttfamily virtual unsigned char Colorization\+::get\+\_\+min\+\_\+color\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_shading_a1781c781c1cb0304aad1e144a21b4efe}{Shading}}.
+
+\mbox{\Hypertarget{class_colorization_a57128b59c3e03984b5215f210681bb28}\label{class_colorization_a57128b59c3e03984b5215f210681bb28}} 
+\index{Colorization@{Colorization}!get\_type@{get\_type}}
+\index{get\_type@{get\_type}!Colorization@{Colorization}}
+\doxysubsubsection{\texorpdfstring{get\_type()}{get\_type()}}
+{\footnotesize\ttfamily std\+::string Colorization\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+type of colorization 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_colorization_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{_colorization_8cpp_source}{Colorization.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_colorization_l00011}00011 \{}
+\DoxyCodeLine{\Hypertarget{class_colorization_l00012}00012   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_colorization_a61437409415c7a8dbcb3f7bc13bf6dc8}{type}};}
+\DoxyCodeLine{\Hypertarget{class_colorization_l00013}00013 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_colorization_a25d52680a30cf9fd472559baf93298c2}\label{class_colorization_a25d52680a30cf9fd472559baf93298c2}} 
+\index{Colorization@{Colorization}!maxColorValue@{maxColorValue}}
+\index{maxColorValue@{maxColorValue}!Colorization@{Colorization}}
+\doxysubsubsection{\texorpdfstring{maxColorValue}{maxColorValue}}
+{\footnotesize\ttfamily const unsigned char Colorization\+::max\+Color\+Value = 255\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_colorization_8h_source_l00034}{34}} of file \mbox{\hyperlink{_colorization_8h_source}{Colorization.\+h}}.
+
+\mbox{\Hypertarget{class_colorization_a0b1052e2f8bd9d53f66ffdb3de1fb24b}\label{class_colorization_a0b1052e2f8bd9d53f66ffdb3de1fb24b}} 
+\index{Colorization@{Colorization}!minColorValue@{minColorValue}}
+\index{minColorValue@{minColorValue}!Colorization@{Colorization}}
+\doxysubsubsection{\texorpdfstring{minColorValue}{minColorValue}}
+{\footnotesize\ttfamily const unsigned char Colorization\+::min\+Color\+Value = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_colorization_8h_source_l00036}{36}} of file \mbox{\hyperlink{_colorization_8h_source}{Colorization.\+h}}.
+
+\mbox{\Hypertarget{class_colorization_a61437409415c7a8dbcb3f7bc13bf6dc8}\label{class_colorization_a61437409415c7a8dbcb3f7bc13bf6dc8}} 
+\index{Colorization@{Colorization}!type@{type}}
+\index{type@{type}!Colorization@{Colorization}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily std\+::string Colorization\+::type\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines type of colorization 
+
+Definition at line \mbox{\hyperlink{_colorization_8h_source_l00032}{32}} of file \mbox{\hyperlink{_colorization_8h_source}{Colorization.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Final/\+Mandelbrot\+\_\+\+Cpp\+\_\+\+Final/src/\mbox{\hyperlink{_colorization_8h}{Colorization.\+h}}\item 
+D\+:/\+Documents/\+Final/\+Mandelbrot\+\_\+\+Cpp\+\_\+\+Final/src/\mbox{\hyperlink{_colorization_8cpp}{Colorization.\+cpp}}\end{DoxyCompactItemize}

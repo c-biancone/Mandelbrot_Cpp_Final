@@ -1,0 +1,505 @@
+\hypertarget{class_p_p_m}{}\doxysection{PPM Class Reference}
+\label{class_p_p_m}\index{PPM@{PPM}}
+
+
+{\ttfamily \#include $<$PPM.\+h$>$}
+
+
+
+Collaboration diagram for PPM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_p_p_m__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_p_m_a491a5d3e3c3e6c591b935e92654df132}{PPM}} (int \mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}}, int \mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}})
+\item 
+\mbox{\hyperlink{class_p_p_m_adb41eb8ceaff0cd6a2cfdc4343560702}{PPM}} (const std\+::string \&\mbox{\hyperlink{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}{file\+Name}}, int \mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}}, int \mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}})
+\item 
+\mbox{\hyperlink{class_p_p_m_ae89d11c8f7d5b5b7976530983ea2b3ed}{PPM}} (const \mbox{\hyperlink{class_p_p_m}{PPM}} \&old\+PPM)
+\item 
+void \mbox{\hyperlink{class_p_p_m_a7ad86cf290b2c21a9758fa40ce7bd640}{set\+\_\+output\+Directory}} (const std\+::string \&output\+Directory\+In)
+\item 
+\mbox{\hyperlink{class_p_p_m}{PPM}} \& \mbox{\hyperlink{class_p_p_m_a41f5f533666ec23e9fd5c816febdf288}{operator=}} (std\+::string file\+Name\+In)
+\item 
+bool \mbox{\hyperlink{class_p_p_m_a5a0eb3a7d6cb02ba6f81305210193a4e}{init\+\_\+stream}} ()
+\item 
+void \mbox{\hyperlink{class_p_p_m_a789e4715a585b66ceea443081c7350b0}{write\+\_\+row}} (const std\+::vector$<$ unsigned char $>$ \&row)
+\item 
+void \mbox{\hyperlink{class_p_p_m_a3e0956996f2bb204dfd20525deffcc56}{write\+\_\+header}} ()
+\item 
+void \mbox{\hyperlink{class_p_p_m_a05a10536d51b5d9229dfe6d53ee06478}{set\+\_\+width}} (int width\+In)
+\item 
+void \mbox{\hyperlink{class_p_p_m_ad174ba184abc9955469dfec383700620}{set\+\_\+height}} (int height\+In)
+\item 
+void \mbox{\hyperlink{class_p_p_m_a67659e320f2a78621c44c61890649920}{set\+\_\+comment}} (std\+::string comment\+In)
+\item 
+void \mbox{\hyperlink{class_p_p_m_ae5bd97baf8db5daa88cf63a5b7fa4439}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{class_p_p_m_ad89e7cb6c10076ad30dcc60aec71fe71}{magic}} = \char`\"{}P6\textbackslash{}n\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{class_p_p_m_ab943eccc0585350efbbc0ef05034f2ee}{pix\+Max\+Val}} = \char`\"{}255\textbackslash{}n\char`\"{}
+\item 
+int \mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}}
+\item 
+int \mbox{\hyperlink{class_p_p_m_a41670f221ff2381ef8f79d46356a81b1}{sub\+Pixel}}
+\item 
+int \mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}}
+\item 
+std\+::string \mbox{\hyperlink{class_p_p_m_a4e5adda848b2e1e370a7fa5914006e58}{comment}}
+\item 
+std\+::stringstream \mbox{\hyperlink{class_p_p_m_a653eb045881b468006297095526331c1}{header}}
+\item 
+std\+::string \mbox{\hyperlink{class_p_p_m_a00cf3296ddcc6b4f578f84566fed8c7e}{output\+Directory}}
+\item 
+std\+::string \mbox{\hyperlink{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}{file\+Name}}
+\item 
+std\+::ofstream \mbox{\hyperlink{class_p_p_m_a12d9ff57253307a67826633bea667f2d}{image}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00011}{11}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_p_m_a491a5d3e3c3e6c591b935e92654df132}\label{class_p_p_m_a491a5d3e3c3e6c591b935e92654df132}} 
+\index{PPM@{PPM}!PPM@{PPM}}
+\index{PPM@{PPM}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{PPM()}{PPM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily PPM\+::\+PPM (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Default parametrized constructor contains output directory and file name 
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00007}00007                               : \mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}}(\mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}}), \mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}}(\mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}})}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00009}00009   \mbox{\hyperlink{class_p_p_m_a00cf3296ddcc6b4f578f84566fed8c7e}{outputDirectory}} = \textcolor{stringliteral}{"{}..\(\backslash\)\(\backslash\)output\(\backslash\)\(\backslash\)"{}};}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00010}00010   \mbox{\hyperlink{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}{fileName}} = \mbox{\hyperlink{class_p_p_m_a00cf3296ddcc6b4f578f84566fed8c7e}{outputDirectory}} + \textcolor{stringliteral}{"{}gigabrot\_default.ppm"{}};}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00011}00011   \mbox{\hyperlink{class_p_p_m_a41670f221ff2381ef8f79d46356a81b1}{subPixel}} = \mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}} * 3;}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00012}00012 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_p_m_adb41eb8ceaff0cd6a2cfdc4343560702}\label{class_p_p_m_adb41eb8ceaff0cd6a2cfdc4343560702}} 
+\index{PPM@{PPM}!PPM@{PPM}}
+\index{PPM@{PPM}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{PPM()}{PPM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily PPM\+::\+PPM (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Minimal parametrized constructor Only needs file name, contains output directory 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00014}00014                                                          : \mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}}(\mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}}), \mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}}(\mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}})}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00015}00015 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00016}00016   \mbox{\hyperlink{class_p_p_m_a00cf3296ddcc6b4f578f84566fed8c7e}{outputDirectory}} = \textcolor{stringliteral}{"{}..\(\backslash\)\(\backslash\)output\(\backslash\)\(\backslash\)"{}};}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00017}00017   this-\/>\mbox{\hyperlink{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}{fileName}} = \mbox{\hyperlink{class_p_p_m_a00cf3296ddcc6b4f578f84566fed8c7e}{outputDirectory}} + \mbox{\hyperlink{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}{fileName}};}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00018}00018   \mbox{\hyperlink{class_p_p_m_a41670f221ff2381ef8f79d46356a81b1}{subPixel}} = \mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}} * 3;}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00019}00019 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_p_m_ae89d11c8f7d5b5b7976530983ea2b3ed}\label{class_p_p_m_ae89d11c8f7d5b5b7976530983ea2b3ed}} 
+\index{PPM@{PPM}!PPM@{PPM}}
+\index{PPM@{PPM}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{PPM()}{PPM()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily PPM\+::\+PPM (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_p_p_m}{PPM}} \&}]{old\+PPM }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em old\+PPM} & -\/ dereferenced old object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00021}00021                           : \mbox{\hyperlink{class_p_p_m_ad89e7cb6c10076ad30dcc60aec71fe71}{magic}}(oldPPM.\mbox{\hyperlink{class_p_p_m_ad89e7cb6c10076ad30dcc60aec71fe71}{magic}}), \mbox{\hyperlink{class_p_p_m_ab943eccc0585350efbbc0ef05034f2ee}{pixMaxVal}}(oldPPM.\mbox{\hyperlink{class_p_p_m_ab943eccc0585350efbbc0ef05034f2ee}{pixMaxVal}}),}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00022}00022     \mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}}(oldPPM.\mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}}), \mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}}(oldPPM.\mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}}), \mbox{\hyperlink{class_p_p_m_a41670f221ff2381ef8f79d46356a81b1}{subPixel}}(oldPPM.\mbox{\hyperlink{class_p_p_m_a41670f221ff2381ef8f79d46356a81b1}{subPixel}}), \mbox{\hyperlink{class_p_p_m_a4e5adda848b2e1e370a7fa5914006e58}{comment}}(oldPPM.\mbox{\hyperlink{class_p_p_m_a4e5adda848b2e1e370a7fa5914006e58}{comment}})}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00023}00023 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_p_m_ae5bd97baf8db5daa88cf63a5b7fa4439}\label{class_p_p_m_ae5bd97baf8db5daa88cf63a5b7fa4439}} 
+\index{PPM@{PPM}!close@{close}}
+\index{close@{close}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void PPM\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close ofstream for image 
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00073}00073 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00074}00074   \mbox{\hyperlink{class_p_p_m_a12d9ff57253307a67826633bea667f2d}{image}}.close();}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00075}00075   cout << \textcolor{stringliteral}{"{}File "{}} << \mbox{\hyperlink{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}{fileName}} << \textcolor{stringliteral}{"{} saved\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00076}00076 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_p_p_m_ae5bd97baf8db5daa88cf63a5b7fa4439_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_p_p_m_a5a0eb3a7d6cb02ba6f81305210193a4e}\label{class_p_p_m_a5a0eb3a7d6cb02ba6f81305210193a4e}} 
+\index{PPM@{PPM}!init\_stream@{init\_stream}}
+\index{init\_stream@{init\_stream}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{init\_stream()}{init\_stream()}}
+{\footnotesize\ttfamily bool PPM\+::init\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize ofstream \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00037}00037 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00038}00038   \mbox{\hyperlink{class_p_p_m_a12d9ff57253307a67826633bea667f2d}{image}}.open(\mbox{\hyperlink{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}{fileName}}, ios::binary);}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00040}00040   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_p_p_m_a12d9ff57253307a67826633bea667f2d}{image}}.is\_open())}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00041}00041   \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00042}00042     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00043}00043   \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00044}00044   \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00045}00045     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00046}00046   \}}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00047}00047 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_p_p_m_a5a0eb3a7d6cb02ba6f81305210193a4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_p_p_m_a41f5f533666ec23e9fd5c816febdf288}\label{class_p_p_m_a41f5f533666ec23e9fd5c816febdf288}} 
+\index{PPM@{PPM}!operator=@{operator=}}
+\index{operator=@{operator=}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_p_p_m}{PPM}} \& PPM\+::operator= (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name\+In }\end{DoxyParamCaption})}
+
+Overloaded assignment operator used to override output directory and file name 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name\+In} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00030}{30}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00031}00031 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00032}00032   this-\/>\mbox{\hyperlink{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}{fileName}} = std::move(fileNameIn);}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00033}00033   \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00034}00034 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_p_m_a67659e320f2a78621c44c61890649920}\label{class_p_p_m_a67659e320f2a78621c44c61890649920}} 
+\index{PPM@{PPM}!set\_comment@{set\_comment}}
+\index{set\_comment@{set\_comment}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{set\_comment()}{set\_comment()}}
+{\footnotesize\ttfamily void PPM\+::set\+\_\+comment (\begin{DoxyParamCaption}\item[{std\+::string}]{comment\+In }\end{DoxyParamCaption})}
+
+Set custom comment for \mbox{\hyperlink{class_p_p_m}{PPM}} image 
+\begin{DoxyParams}{Parameters}
+{\em comment\+In} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00068}00068 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00069}00069   \mbox{\hyperlink{class_p_p_m_a4e5adda848b2e1e370a7fa5914006e58}{comment}} = std::move(commentIn);}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00070}00070 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_p_m_ad174ba184abc9955469dfec383700620}\label{class_p_p_m_ad174ba184abc9955469dfec383700620}} 
+\index{PPM@{PPM}!set\_height@{set\_height}}
+\index{set\_height@{set\_height}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{set\_height()}{set\_height()}}
+{\footnotesize\ttfamily void PPM\+::set\+\_\+height (\begin{DoxyParamCaption}\item[{int}]{height\+In }\end{DoxyParamCaption})}
+
+Set height of \mbox{\hyperlink{class_p_p_m}{PPM}} image 
+\begin{DoxyParams}{Parameters}
+{\em height\+In} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00062}{62}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00063}00063 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00064}00064   \mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}} = heightIn;}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00065}00065 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_p_m_a7ad86cf290b2c21a9758fa40ce7bd640}\label{class_p_p_m_a7ad86cf290b2c21a9758fa40ce7bd640}} 
+\index{PPM@{PPM}!set\_outputDirectory@{set\_outputDirectory}}
+\index{set\_outputDirectory@{set\_outputDirectory}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{set\_outputDirectory()}{set\_outputDirectory()}}
+{\footnotesize\ttfamily void PPM\+::set\+\_\+output\+Directory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{output\+Directory\+In }\end{DoxyParamCaption})}
+
+Sets output directory destination 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name\+In} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00026}00026 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00027}00027   \mbox{\hyperlink{class_p_p_m_a00cf3296ddcc6b4f578f84566fed8c7e}{outputDirectory}} = outputDirectoryIn;}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00028}00028 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_p_m_a05a10536d51b5d9229dfe6d53ee06478}\label{class_p_p_m_a05a10536d51b5d9229dfe6d53ee06478}} 
+\index{PPM@{PPM}!set\_width@{set\_width}}
+\index{set\_width@{set\_width}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{set\_width()}{set\_width()}}
+{\footnotesize\ttfamily void PPM\+::set\+\_\+width (\begin{DoxyParamCaption}\item[{int}]{width\+In }\end{DoxyParamCaption})}
+
+Set width of \mbox{\hyperlink{class_p_p_m}{PPM}} image 
+\begin{DoxyParams}{Parameters}
+{\em width\+In} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00057}{57}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00058}00058 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00059}00059   \mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}} = widthIn;}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00060}00060 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_p_m_a3e0956996f2bb204dfd20525deffcc56}\label{class_p_p_m_a3e0956996f2bb204dfd20525deffcc56}} 
+\index{PPM@{PPM}!write\_header@{write\_header}}
+\index{write\_header@{write\_header}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{write\_header()}{write\_header()}}
+{\footnotesize\ttfamily void PPM\+::write\+\_\+header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print header data to \mbox{\hyperlink{class_p_p_m}{PPM}} file 
+
+Definition at line \mbox{\hyperlink{_p_p_m_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{_p_p_m_8cpp_source}{PPM.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00050}00050 \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00051}00051   \textcolor{keywordtype}{string} widthStr = to\_string(this-\/>\mbox{\hyperlink{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}{width}});}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00052}00052   \textcolor{keywordtype}{string} lengthStr = to\_string(this-\/>\mbox{\hyperlink{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}{height}});}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00053}00053   \mbox{\hyperlink{class_p_p_m_a653eb045881b468006297095526331c1}{header}} << \mbox{\hyperlink{class_p_p_m_ad89e7cb6c10076ad30dcc60aec71fe71}{magic}} << widthStr << \textcolor{stringliteral}{"{} "{}} << lengthStr << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << \mbox{\hyperlink{class_p_p_m_a4e5adda848b2e1e370a7fa5914006e58}{comment}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << \mbox{\hyperlink{class_p_p_m_ab943eccc0585350efbbc0ef05034f2ee}{pixMaxVal}};}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00054}00054   \mbox{\hyperlink{class_p_p_m_a12d9ff57253307a67826633bea667f2d}{image}} << \mbox{\hyperlink{class_p_p_m_a653eb045881b468006297095526331c1}{header}}.rdbuf();}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00055}00055 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{class_p_p_m_a3e0956996f2bb204dfd20525deffcc56_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_p_p_m_a789e4715a585b66ceea443081c7350b0}\label{class_p_p_m_a789e4715a585b66ceea443081c7350b0}} 
+\index{PPM@{PPM}!write\_row@{write\_row}}
+\index{write\_row@{write\_row}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{write\_row()}{write\_row()}}
+{\footnotesize\ttfamily void PPM\+::write\+\_\+row (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ unsigned char $>$ \&}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print row of pixels to \mbox{\hyperlink{class_p_p_m}{PPM}} file -\/ templated for size of array 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N} & -\/ std\+::array size \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em row} & -\/ std\+::array of pixels \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00063}{63}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00064}00064   \{}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00065}00065     \mbox{\hyperlink{class_p_p_m_a12d9ff57253307a67826633bea667f2d}{image}}.write((\textcolor{keywordtype}{char} \textcolor{keyword}{const} *) row.data(), row.size());}
+\DoxyCodeLine{\Hypertarget{class_p_p_m_l00066}00066   \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{class_p_p_m_a789e4715a585b66ceea443081c7350b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_p_p_m_a4e5adda848b2e1e370a7fa5914006e58}\label{class_p_p_m_a4e5adda848b2e1e370a7fa5914006e58}} 
+\index{PPM@{PPM}!comment@{comment}}
+\index{comment@{comment}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{comment}{comment}}
+{\footnotesize\ttfamily std\+::string PPM\+::comment\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00112}{112}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+\mbox{\Hypertarget{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}\label{class_p_p_m_aef9e023df87c44fd04663dc92e52e36d}} 
+\index{PPM@{PPM}!fileName@{fileName}}
+\index{fileName@{fileName}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{fileName}{fileName}}
+{\footnotesize\ttfamily std\+::string PPM\+::file\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00121}{121}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+\mbox{\Hypertarget{class_p_p_m_a653eb045881b468006297095526331c1}\label{class_p_p_m_a653eb045881b468006297095526331c1}} 
+\index{PPM@{PPM}!header@{header}}
+\index{header@{header}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily std\+::stringstream PPM\+::header\hspace{0.3cm}{\ttfamily [private]}}
+
+Contains full header info 
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00117}{117}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+\mbox{\Hypertarget{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}\label{class_p_p_m_a20509f322d2b6ef7dfa8c5b6d8437447}} 
+\index{PPM@{PPM}!height@{height}}
+\index{height@{height}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int PPM\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00110}{110}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+\mbox{\Hypertarget{class_p_p_m_a12d9ff57253307a67826633bea667f2d}\label{class_p_p_m_a12d9ff57253307a67826633bea667f2d}} 
+\index{PPM@{PPM}!image@{image}}
+\index{image@{image}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily std\+::ofstream PPM\+::image\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00123}{123}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+\mbox{\Hypertarget{class_p_p_m_ad89e7cb6c10076ad30dcc60aec71fe71}\label{class_p_p_m_ad89e7cb6c10076ad30dcc60aec71fe71}} 
+\index{PPM@{PPM}!magic@{magic}}
+\index{magic@{magic}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{magic}{magic}}
+{\footnotesize\ttfamily const std\+::string PPM\+::magic = \char`\"{}P6\textbackslash{}n\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+Determines type of \mbox{\hyperlink{class_p_p_m}{PPM}} 
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00102}{102}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+\mbox{\Hypertarget{class_p_p_m_a00cf3296ddcc6b4f578f84566fed8c7e}\label{class_p_p_m_a00cf3296ddcc6b4f578f84566fed8c7e}} 
+\index{PPM@{PPM}!outputDirectory@{outputDirectory}}
+\index{outputDirectory@{outputDirectory}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{outputDirectory}{outputDirectory}}
+{\footnotesize\ttfamily std\+::string PPM\+::output\+Directory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00119}{119}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+\mbox{\Hypertarget{class_p_p_m_ab943eccc0585350efbbc0ef05034f2ee}\label{class_p_p_m_ab943eccc0585350efbbc0ef05034f2ee}} 
+\index{PPM@{PPM}!pixMaxVal@{pixMaxVal}}
+\index{pixMaxVal@{pixMaxVal}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{pixMaxVal}{pixMaxVal}}
+{\footnotesize\ttfamily const std\+::string PPM\+::pix\+Max\+Val = \char`\"{}255\textbackslash{}n\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00104}{104}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+\mbox{\Hypertarget{class_p_p_m_a41670f221ff2381ef8f79d46356a81b1}\label{class_p_p_m_a41670f221ff2381ef8f79d46356a81b1}} 
+\index{PPM@{PPM}!subPixel@{subPixel}}
+\index{subPixel@{subPixel}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{subPixel}{subPixel}}
+{\footnotesize\ttfamily int PPM\+::sub\+Pixel\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00108}{108}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+\mbox{\Hypertarget{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}\label{class_p_p_m_a4df1e57f9a458b9dfe13e542a3809f6b}} 
+\index{PPM@{PPM}!width@{width}}
+\index{width@{width}!PPM@{PPM}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int PPM\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_p_p_m_8h_source_l00106}{106}} of file \mbox{\hyperlink{_p_p_m_8h_source}{PPM.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Final/\+Mandelbrot\+\_\+\+Cpp\+\_\+\+Final/src/\mbox{\hyperlink{_p_p_m_8h}{PPM.\+h}}\item 
+D\+:/\+Documents/\+Final/\+Mandelbrot\+\_\+\+Cpp\+\_\+\+Final/src/\mbox{\hyperlink{_p_p_m_8cpp}{PPM.\+cpp}}\end{DoxyCompactItemize}

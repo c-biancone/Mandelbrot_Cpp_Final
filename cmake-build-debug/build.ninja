@@ -39,18 +39,17 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /cygdrive/d/Documents/RIT/Semester_4/C++/Final/cmake-build-debug/
+cmake_ninja_workdir = D$:/Documents/Final/Mandelbrot_Cpp_Final/cmake-build-debug/
 
 #############################################
-# Utility command for rebuild_cache
+# Utility command for edit_cache
 
-build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /cygdrive/d/Documents/RIT/Semester_4/C++/Final/cmake-build-debug && /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/bin/cmake.exe --regenerate-during-build -S/cygdrive/d/Documents/RIT/Semester_4/C++/Final -B/cygdrive/d/Documents/RIT/Semester_4/C++/Final/cmake-build-debug
-  DESC = Running CMake to regenerate build system...
-  pool = console
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\Documents\Final\Mandelbrot_Cpp_Final\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
   restat = 1
 
-build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Object build statements for EXECUTABLE target Gigabrot_Cpp
@@ -61,71 +60,93 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_Gigabrot_Cpp: phony || CMakeFiles/Gigabrot_Cpp.dir
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/main.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/main.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\main.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/PPM.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/PPM.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/PPM.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/PPM.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/PPM.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\PPM.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Mandelbrot.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Mandelbrot.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Mandelbrot.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Colorization.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Colorization.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Colorization.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Shading.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Shading.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/Shading.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/Shading.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Shading.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Shading.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/InsideColor.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/InsideColor.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\InsideColor.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/LineColor.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/LineColor.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\LineColor.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Striping.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Striping.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/Striping.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/Striping.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Striping.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Striping.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/NormalMap.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/NormalMap.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/NormalMap.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/NormalMap.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/NormalMap.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\NormalMap.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Neumorphic.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Neumorphic.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/Neumorphic.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/Neumorphic.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Neumorphic.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Neumorphic.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.o: CXX_COMPILER__Gigabrot_Cpp_Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/ThreadPool.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
-  DEP_FILE = CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.o.d
+build CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/ThreadPool.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+  DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\ThreadPool.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gigabrot_Cpp.dir/src
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gigabrot_Cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
 
 # =============================================================================
@@ -135,26 +156,28 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.o: CXX_COMPILER__Gigabrot_C
 #############################################
 # Link the executable Gigabrot_Cpp.exe
 
-build Gigabrot_Cpp.exe: CXX_EXECUTABLE_LINKER__Gigabrot_Cpp_Debug CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/PPM.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/Shading.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/Striping.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/NormalMap.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/Neumorphic.cpp.o CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.o
+build Gigabrot_Cpp.exe: CXX_EXECUTABLE_LINKER__Gigabrot_Cpp_Debug CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/PPM.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/Shading.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/Striping.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/NormalMap.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/Neumorphic.cpp.obj CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.obj
   FLAGS = -fopenmp -g
-  LINK_FLAGS = -Wl,--enable-auto-import
-  OBJECT_DIR = CMakeFiles/Gigabrot_Cpp.dir
-  POST_BUILD = :
-  PRE_LINK = :
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_FILE = Gigabrot_Cpp.exe
   TARGET_IMPLIB = libGigabrot_Cpp.dll.a
-  TARGET_PDB = Gigabrot_Cpp.exe.dbg
+  TARGET_PDB = Gigabrot_Cpp.pdb
 
 
 #############################################
-# Utility command for edit_cache
+# Utility command for rebuild_cache
 
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /cygdrive/d/Documents/RIT/Semester_4/C++/Final/cmake-build-debug && /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\Documents\Final\Mandelbrot_Cpp_Final\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Documents\Final\Mandelbrot_Cpp_Final -BD:\Documents\Final\Mandelbrot_Cpp_Final\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
   restat = 1
 
-build edit_cache: phony CMakeFiles/edit_cache.util
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
@@ -167,7 +190,7 @@ build Gigabrot_Cpp: phony Gigabrot_Cpp.exe
 # =============================================================================
 
 #############################################
-# Folder: /cygdrive/d/Documents/RIT/Semester_4/C++/Final/cmake-build-debug
+# Folder: D:/Documents/Final/Mandelbrot_Cpp_Final/cmake-build-debug
 
 build all: phony Gigabrot_Cpp.exe
 
@@ -178,14 +201,14 @@ build all: phony Gigabrot_Cpp.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeCInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeCXXInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeCommonLanguageInclude.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeGenericSystem.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeInitializeConfigs.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeLanguageInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeParseImplicitLinkInfo.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeRCInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeSystemSpecificInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeSystemSpecificInitialize.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Compiler/GNU-C.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Compiler/GNU-CXX.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Compiler/GNU.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/FindOpenMP.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/FindPackageHandleStandardArgs.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/FindPackageMessage.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN-GNU-C.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN-GNU-CXX.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN-GNU.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN-windres.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/ROCMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindOpenMP.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake CMakeFiles/FindOpenMP/OpenMPCheckVersion.c CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp CMakeFiles/FindOpenMP/OpenMPTryFlag.c CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeCInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeCXXInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeCommonLanguageInclude.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeGenericSystem.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeInitializeConfigs.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeLanguageInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeParseImplicitLinkInfo.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeRCInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeSystemSpecificInformation.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/CMakeSystemSpecificInitialize.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Compiler/GNU-C.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Compiler/GNU-CXX.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Compiler/GNU.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/FindOpenMP.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/FindPackageHandleStandardArgs.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/FindPackageMessage.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN-GNU-C.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN-GNU-CXX.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN-GNU.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN-windres.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/CYGWIN.cmake /cygdrive/c/Users/Chris/AppData/Local/JetBrains/CLion2021.3/cygwin_cmake/share/cmake-3.21.1/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/ROCMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindOpenMP.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake CMakeFiles/FindOpenMP/OpenMPCheckVersion.c CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp CMakeFiles/FindOpenMP/OpenMPTryFlag.c CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp: phony
 
 
 #############################################

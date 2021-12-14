@@ -1,0 +1,274 @@
+\hypertarget{class_neumorphic}{}\doxysection{Neumorphic Class Reference}
+\label{class_neumorphic}\index{Neumorphic@{Neumorphic}}
+
+
+{\ttfamily \#include $<$Neumorphic.\+h$>$}
+
+
+
+Inheritance diagram for Neumorphic\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_neumorphic__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Neumorphic\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_neumorphic__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_neumorphic_a244048f4281a92a3473ca44d91ea3648}{Neumorphic}} (std\+::complex$<$ double $>$ \mbox{\hyperlink{class_neumorphic_a9710a1f2e0b17baa64d34f836e42cbd0}{z}}, std\+::complex$<$ double $>$ \mbox{\hyperlink{class_neumorphic_a0f33597ddfeb5870eac284de08ec77ec}{dC}})
+\item 
+double \mbox{\hyperlink{class_neumorphic_a64c60604ca3389b60457ddaa16842459}{calculate}} ()
+\item 
+double \mbox{\hyperlink{class_neumorphic_a230a9079dc640691fcc7b29e30932eae}{get\+\_\+reflection}} ()
+\item 
+double \mbox{\hyperlink{class_neumorphic_aaf99862e8226e1d7c4108cf93b481c01}{get\+\_\+height\+Factor}} ()
+\item 
+double \mbox{\hyperlink{class_neumorphic_ad4dbab802eca72b3fd6d354f3479e122}{get\+\_\+angle}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::complex$<$ double $>$ \mbox{\hyperlink{class_neumorphic_a9710a1f2e0b17baa64d34f836e42cbd0}{z}}
+\item 
+std\+::complex$<$ double $>$ \mbox{\hyperlink{class_neumorphic_a0f33597ddfeb5870eac284de08ec77ec}{dC}}
+\item 
+double \mbox{\hyperlink{class_neumorphic_a6d6d1718954196b91ccb132ff4ec3fbd}{height\+Factor}}
+\item 
+double \mbox{\hyperlink{class_neumorphic_a72197d8bc765311758be6d4a158118aa}{angle}}
+\item 
+double \mbox{\hyperlink{class_neumorphic_a3e7a090394eee986287a33218ed757a3}{reflection}}
+\item 
+std\+::complex$<$ double $>$ \mbox{\hyperlink{class_neumorphic_a6d7d450655b54d3d275a858ff2fccad4}{u}}
+\item 
+std\+::complex$<$ double $>$ \mbox{\hyperlink{class_neumorphic_a058de632c7fe93ecd8e3fb03fd4df90e}{v}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_neumorphic_8h_source_l00006}{6}} of file \mbox{\hyperlink{_neumorphic_8h_source}{Neumorphic.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_neumorphic_a244048f4281a92a3473ca44d91ea3648}\label{class_neumorphic_a244048f4281a92a3473ca44d91ea3648}} 
+\index{Neumorphic@{Neumorphic}!Neumorphic@{Neumorphic}}
+\index{Neumorphic@{Neumorphic}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{Neumorphic()}{Neumorphic()}}
+{\footnotesize\ttfamily Neumorphic\+::\+Neumorphic (\begin{DoxyParamCaption}\item[{std\+::complex$<$ double $>$}]{z,  }\item[{std\+::complex$<$ double $>$}]{dC }\end{DoxyParamCaption})}
+
+Default parametrized constructor 
+\begin{DoxyParams}{Parameters}
+{\em z} & \\
+\hline
+{\em dC} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_neumorphic_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{_neumorphic_8cpp_source}{Neumorphic.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00005}00005                                                             : \mbox{\hyperlink{class_normal_map_ac2bfce8ace9915e75dd5772dd0737b9d}{NormalMap}}(\textcolor{stringliteral}{"{}Neumorphic"{}}), \mbox{\hyperlink{class_neumorphic_a9710a1f2e0b17baa64d34f836e42cbd0}{z}}(\mbox{\hyperlink{class_neumorphic_a9710a1f2e0b17baa64d34f836e42cbd0}{z}}), \mbox{\hyperlink{class_neumorphic_a0f33597ddfeb5870eac284de08ec77ec}{dC}}}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00006}00006 (\mbox{\hyperlink{class_neumorphic_a0f33597ddfeb5870eac284de08ec77ec}{dC}})}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00008}00008   \mbox{\hyperlink{class_neumorphic_a6d6d1718954196b91ccb132ff4ec3fbd}{heightFactor}} = 1.5;}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00009}00009   \mbox{\hyperlink{class_neumorphic_a72197d8bc765311758be6d4a158118aa}{angle}} = 45.0 / 360.0;}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00010}00010   \mbox{\hyperlink{class_neumorphic_a3e7a090394eee986287a33218ed757a3}{reflection}} = FP\_ZERO;}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00011}00011   \mbox{\hyperlink{class_neumorphic_a058de632c7fe93ecd8e3fb03fd4df90e}{v}} = exp(2.0 * \mbox{\hyperlink{class_neumorphic_a72197d8bc765311758be6d4a158118aa}{angle}} * \mbox{\hyperlink{_mandelbrot_8h_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}} * 1i);}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00012}00012 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_neumorphic_a64c60604ca3389b60457ddaa16842459}\label{class_neumorphic_a64c60604ca3389b60457ddaa16842459}} 
+\index{Neumorphic@{Neumorphic}!calculate@{calculate}}
+\index{calculate@{calculate}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily double Neumorphic\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_normal_map_a94c572fadb2a824a506169ab085465a7}{Normal\+Map}}.
+
+
+
+Definition at line \mbox{\hyperlink{_neumorphic_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{_neumorphic_8cpp_source}{Neumorphic.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00015}00015 \{}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00016}00016   \mbox{\hyperlink{class_neumorphic_a6d7d450655b54d3d275a858ff2fccad4}{u}} = \mbox{\hyperlink{class_neumorphic_a9710a1f2e0b17baa64d34f836e42cbd0}{z}} / \mbox{\hyperlink{class_neumorphic_a0f33597ddfeb5870eac284de08ec77ec}{dC}};}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00017}00017   \mbox{\hyperlink{class_neumorphic_a6d7d450655b54d3d275a858ff2fccad4}{u}} = \mbox{\hyperlink{class_neumorphic_a6d7d450655b54d3d275a858ff2fccad4}{u}} / abs(\mbox{\hyperlink{class_neumorphic_a6d7d450655b54d3d275a858ff2fccad4}{u}}); \textcolor{comment}{// normalize}}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00018}00018   \mbox{\hyperlink{class_neumorphic_a3e7a090394eee986287a33218ed757a3}{reflection}} = \mbox{\hyperlink{class_normal_map_a4dc30475f2a988068a3d710301ecdeca}{dot\_product}}(\mbox{\hyperlink{class_neumorphic_a6d7d450655b54d3d275a858ff2fccad4}{u}}, \mbox{\hyperlink{class_neumorphic_a058de632c7fe93ecd8e3fb03fd4df90e}{v}}) + \mbox{\hyperlink{class_neumorphic_a6d6d1718954196b91ccb132ff4ec3fbd}{heightFactor}};}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00019}00019   \mbox{\hyperlink{class_neumorphic_a3e7a090394eee986287a33218ed757a3}{reflection}} = \mbox{\hyperlink{class_neumorphic_a3e7a090394eee986287a33218ed757a3}{reflection}} / (1.0 + \mbox{\hyperlink{class_neumorphic_a6d6d1718954196b91ccb132ff4ec3fbd}{heightFactor}}); \textcolor{comment}{// rescale so that it does not get bigger than 1}}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00020}00020   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_neumorphic_a3e7a090394eee986287a33218ed757a3}{reflection}} < 0.0)}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00021}00021   \{}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00022}00022     \mbox{\hyperlink{class_neumorphic_a3e7a090394eee986287a33218ed757a3}{reflection}} = 0.0;}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00023}00023   \} \textcolor{keywordflow}{else} \{\}}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00024}00024   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_neumorphic_a3e7a090394eee986287a33218ed757a3}{reflection}};}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00025}00025 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_neumorphic_a64c60604ca3389b60457ddaa16842459_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_neumorphic_a64c60604ca3389b60457ddaa16842459_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_neumorphic_ad4dbab802eca72b3fd6d354f3479e122}\label{class_neumorphic_ad4dbab802eca72b3fd6d354f3479e122}} 
+\index{Neumorphic@{Neumorphic}!get\_angle@{get\_angle}}
+\index{get\_angle@{get\_angle}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{get\_angle()}{get\_angle()}}
+{\footnotesize\ttfamily double Neumorphic\+::get\+\_\+angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_neumorphic_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{_neumorphic_8cpp_source}{Neumorphic.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00038}00038 \{}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00039}00039   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_neumorphic_a72197d8bc765311758be6d4a158118aa}{angle}};}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00040}00040 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_neumorphic_aaf99862e8226e1d7c4108cf93b481c01}\label{class_neumorphic_aaf99862e8226e1d7c4108cf93b481c01}} 
+\index{Neumorphic@{Neumorphic}!get\_heightFactor@{get\_heightFactor}}
+\index{get\_heightFactor@{get\_heightFactor}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{get\_heightFactor()}{get\_heightFactor()}}
+{\footnotesize\ttfamily double Neumorphic\+::get\+\_\+height\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_neumorphic_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{_neumorphic_8cpp_source}{Neumorphic.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00033}00033 \{}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00034}00034   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_neumorphic_a6d6d1718954196b91ccb132ff4ec3fbd}{heightFactor}};}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00035}00035 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_neumorphic_a230a9079dc640691fcc7b29e30932eae}\label{class_neumorphic_a230a9079dc640691fcc7b29e30932eae}} 
+\index{Neumorphic@{Neumorphic}!get\_reflection@{get\_reflection}}
+\index{get\_reflection@{get\_reflection}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{get\_reflection()}{get\_reflection()}}
+{\footnotesize\ttfamily double Neumorphic\+::get\+\_\+reflection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_neumorphic_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{_neumorphic_8cpp_source}{Neumorphic.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00028}00028 \{}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00029}00029   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_neumorphic_a3e7a090394eee986287a33218ed757a3}{reflection}};}
+\DoxyCodeLine{\Hypertarget{class_neumorphic_l00030}00030 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_neumorphic_a72197d8bc765311758be6d4a158118aa}\label{class_neumorphic_a72197d8bc765311758be6d4a158118aa}} 
+\index{Neumorphic@{Neumorphic}!angle@{angle}}
+\index{angle@{angle}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily double Neumorphic\+::angle\hspace{0.3cm}{\ttfamily [private]}}
+
+incoming direction of light WRT +x-\/axis (degrees) change first number 
+
+Definition at line \mbox{\hyperlink{_neumorphic_8h_source_l00040}{40}} of file \mbox{\hyperlink{_neumorphic_8h_source}{Neumorphic.\+h}}.
+
+\mbox{\Hypertarget{class_neumorphic_a0f33597ddfeb5870eac284de08ec77ec}\label{class_neumorphic_a0f33597ddfeb5870eac284de08ec77ec}} 
+\index{Neumorphic@{Neumorphic}!dC@{dC}}
+\index{dC@{dC}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{dC}{dC}}
+{\footnotesize\ttfamily std\+::complex$<$double$>$ Neumorphic\+::dC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_neumorphic_8h_source_l00029}{29}} of file \mbox{\hyperlink{_neumorphic_8h_source}{Neumorphic.\+h}}.
+
+\mbox{\Hypertarget{class_neumorphic_a6d6d1718954196b91ccb132ff4ec3fbd}\label{class_neumorphic_a6d6d1718954196b91ccb132ff4ec3fbd}} 
+\index{Neumorphic@{Neumorphic}!heightFactor@{heightFactor}}
+\index{heightFactor@{heightFactor}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{heightFactor}{heightFactor}}
+{\footnotesize\ttfamily double Neumorphic\+::height\+Factor\hspace{0.3cm}{\ttfamily [private]}}
+
+of pseudo incoming light vector 
+
+Definition at line \mbox{\hyperlink{_neumorphic_8h_source_l00034}{34}} of file \mbox{\hyperlink{_neumorphic_8h_source}{Neumorphic.\+h}}.
+
+\mbox{\Hypertarget{class_neumorphic_a3e7a090394eee986287a33218ed757a3}\label{class_neumorphic_a3e7a090394eee986287a33218ed757a3}} 
+\index{Neumorphic@{Neumorphic}!reflection@{reflection}}
+\index{reflection@{reflection}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{reflection}{reflection}}
+{\footnotesize\ttfamily double Neumorphic\+::reflection\hspace{0.3cm}{\ttfamily [private]}}
+
+normalized normal vector 
+
+Definition at line \mbox{\hyperlink{_neumorphic_8h_source_l00045}{45}} of file \mbox{\hyperlink{_neumorphic_8h_source}{Neumorphic.\+h}}.
+
+\mbox{\Hypertarget{class_neumorphic_a6d7d450655b54d3d275a858ff2fccad4}\label{class_neumorphic_a6d7d450655b54d3d275a858ff2fccad4}} 
+\index{Neumorphic@{Neumorphic}!u@{u}}
+\index{u@{u}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{u}{u}}
+{\footnotesize\ttfamily std\+::complex$<$double$>$ Neumorphic\+::u\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_neumorphic_8h_source_l00047}{47}} of file \mbox{\hyperlink{_neumorphic_8h_source}{Neumorphic.\+h}}.
+
+\mbox{\Hypertarget{class_neumorphic_a058de632c7fe93ecd8e3fb03fd4df90e}\label{class_neumorphic_a058de632c7fe93ecd8e3fb03fd4df90e}} 
+\index{Neumorphic@{Neumorphic}!v@{v}}
+\index{v@{v}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily std\+::complex$<$double$>$ Neumorphic\+::v\hspace{0.3cm}{\ttfamily [private]}}
+
+unit vector in direction of this.\+angle 
+
+Definition at line \mbox{\hyperlink{_neumorphic_8h_source_l00052}{52}} of file \mbox{\hyperlink{_neumorphic_8h_source}{Neumorphic.\+h}}.
+
+\mbox{\Hypertarget{class_neumorphic_a9710a1f2e0b17baa64d34f836e42cbd0}\label{class_neumorphic_a9710a1f2e0b17baa64d34f836e42cbd0}} 
+\index{Neumorphic@{Neumorphic}!z@{z}}
+\index{z@{z}!Neumorphic@{Neumorphic}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily std\+::complex$<$double$>$ Neumorphic\+::z\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_neumorphic_8h_source_l00027}{27}} of file \mbox{\hyperlink{_neumorphic_8h_source}{Neumorphic.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Final/\+Mandelbrot\+\_\+\+Cpp\+\_\+\+Final/src/\mbox{\hyperlink{_neumorphic_8h}{Neumorphic.\+h}}\item 
+D\+:/\+Documents/\+Final/\+Mandelbrot\+\_\+\+Cpp\+\_\+\+Final/src/\mbox{\hyperlink{_neumorphic_8cpp}{Neumorphic.\+cpp}}\end{DoxyCompactItemize}

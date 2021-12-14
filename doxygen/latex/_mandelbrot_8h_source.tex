@@ -1,0 +1,136 @@
+\hypertarget{_mandelbrot_8h_source}{}\doxysection{Mandelbrot.\+h}
+\label{_mandelbrot_8h_source}\index{D:/Documents/Final/Mandelbrot\_Cpp\_Final/src/Mandelbrot.h@{D:/Documents/Final/Mandelbrot\_Cpp\_Final/src/Mandelbrot.h}}
+\mbox{\hyperlink{_mandelbrot_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef C\_\_\_MANDELBROT\_H}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00002}00002 \textcolor{preprocessor}{\#define C\_\_\_MANDELBROT\_H}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_shading_8h}{Shading.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_inside_color_8h}{InsideColor.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_line_color_8h}{LineColor.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_striping_8h}{Striping.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <complex>}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <mutex>}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00014}\mbox{\hyperlink{_mandelbrot_8h_ae71449b1cc6e6250b91f539153a7a0d3}{00014}} \textcolor{preprocessor}{\#define M\_PI 3.14159265358979323846}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00016}\mbox{\hyperlink{class_mandelbrot}{00016}} \textcolor{keyword}{class }\mbox{\hyperlink{class_mandelbrot}{Mandelbrot}}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00017}00017 \{}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00018}00018  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00025}00025   \mbox{\hyperlink{class_mandelbrot_a1929ed53777950938e82ed2f384e25f1}{Mandelbrot}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a71c0f47bd4bd309fb2d88a883c241e90}{width}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a524cd6952496c3d4305d7f3acddc51f5}{height}});}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00035}00035   \mbox{\hyperlink{class_mandelbrot_a1929ed53777950938e82ed2f384e25f1}{Mandelbrot}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a1c5f52ae2590538339350b73b89b1049}{pX}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a85e8a342bedd96e1fbe64b9b63f296b0}{pY}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a71c0f47bd4bd309fb2d88a883c241e90}{width}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a524cd6952496c3d4305d7f3acddc51f5}{height}});}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00037}00037   \mbox{\hyperlink{class_mandelbrot_a1929ed53777950938e82ed2f384e25f1}{Mandelbrot}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_mandelbrot}{Mandelbrot}} \&oldMandelbrot);}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00039}00039   \mbox{\hyperlink{class_mandelbrot_a4ffabf508467746a74459b53826504a0}{\string~Mandelbrot}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00046}00046   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_a3431562e78971089a36321e681782142}{current\_pixel}}(\textcolor{keywordtype}{int} pxIn, \textcolor{keywordtype}{int} pyIn);}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00048}00048   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_a41f5da3199772bab5b7d00ca8229b17b}{set\_image}}(\textcolor{keywordtype}{int} widthIn, \textcolor{keywordtype}{int} heightIn);}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00050}00050   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_a101c21ee41d08417ac8cc49460a24c31}{set\_plane}}(\textcolor{keywordtype}{double} cxMinIn, \textcolor{keywordtype}{double} cxMaxIn, \textcolor{keywordtype}{double} cyMinIn, \textcolor{keywordtype}{double} cYMaxIn);}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00052}00052   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_a043f3170c0a30e39371fb12d52afdf28}{set\_stripe\_density}}(\textcolor{keywordtype}{double} stripeDensityIn);}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00054}00054   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_aafc9610a5cd7d299d308035b99d442e0}{set\_iSkip}}(\textcolor{keywordtype}{int} iSkipIn);}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00056}00056   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_ac23e1c991217ad0ca518c06c346841c7}{set\_border}}(\textcolor{keywordtype}{int} thinIn);}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00061}00061   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_adff783af3abb4df68cc0e5cc410b8ccb}{get\_c}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00066}00066   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_a45c0d3b8a3af28b7979454a12b7b15de}{iterate}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00071}00071   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_mandelbrot_a090bd38cc1f5b2770ada8d544e5ec24d}{colorize\_bw}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00080}00080   \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_mandelbrot_a7be8a216826f97bb846b4a92460e0d2a}{shape\_check}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00086}00086   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_ab3b5bab7a2c9021766063e29fd907558}{get\_t}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00091}00091   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_a68007e0e5cd253ba8468f7d3eab23865}{interpolate}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00093}00093   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_a76825979f594a808d7acf6c457d5bb41}{average}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00095}00095   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_aa8f96ce6e09c56fe42ef9149f3ac3378}{describe\_border}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00097}00097   \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_mandelbrot_a9a0551ef65afeec128f10c544c78826a}{in\_border}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00099}00099   \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_mandelbrot_a9153b2a51f860815d7e374a16d9198b6}{in\_set}}(); \textcolor{comment}{// for readability}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00101}\mbox{\hyperlink{class_mandelbrot_abe3070cb5b7b09ab5a284e6017e48456}{00101}}   \textcolor{keyword}{friend} std::ostream\& \mbox{\hyperlink{class_mandelbrot_abe3070cb5b7b09ab5a284e6017e48456}{operator<<}}(std::ostream\& os, \textcolor{keyword}{const} \mbox{\hyperlink{class_mandelbrot}{Mandelbrot}}\& mandelbrot);}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00103}00103   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mandelbrot_acc4093ebb0cebcb001efd41560a8d8e5}{reset}}();}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00106}00106  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00108}\mbox{\hyperlink{class_mandelbrot_ab3373602d05a89c0af2b188e4e0cafd9}{00108}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_ab3373602d05a89c0af2b188e4e0cafd9}{iter}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00110}\mbox{\hyperlink{class_mandelbrot_a644d50c273951743d4f3fc42a5eabe6f}{00110}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a644d50c273951743d4f3fc42a5eabe6f}{iterMax}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00112}\mbox{\hyperlink{class_mandelbrot_a16dd69d458914d53e638367feb5df29b}{00112}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a16dd69d458914d53e638367feb5df29b}{escapeRadius}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00114}00114   \textcolor{comment}{// double lnER;}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00116}\mbox{\hyperlink{class_mandelbrot_ae0d54bbf0f96a512ae381da632f85a52}{00116}}   std::complex<double> \mbox{\hyperlink{class_mandelbrot_ae0d54bbf0f96a512ae381da632f85a52}{c}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00118}\mbox{\hyperlink{class_mandelbrot_a277b7ca3a6124c328c08ef3916de8d3d}{00118}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a277b7ca3a6124c328c08ef3916de8d3d}{r}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00120}\mbox{\hyperlink{class_mandelbrot_afd8452944f977586df5701739ec0feca}{00120}}   std::complex<double> \mbox{\hyperlink{class_mandelbrot_afd8452944f977586df5701739ec0feca}{z}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00122}\mbox{\hyperlink{class_mandelbrot_a0d1aa67df6f97a5c73c821118e5d7855}{00122}}   std::complex<double> \mbox{\hyperlink{class_mandelbrot_a0d1aa67df6f97a5c73c821118e5d7855}{dC}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00124}\mbox{\hyperlink{class_mandelbrot_ae2f926d92eea91a96de65d0ce552cd3f}{00124}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_ae2f926d92eea91a96de65d0ce552cd3f}{q}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00126}\mbox{\hyperlink{class_mandelbrot_af99d9b279c159c646025946159d18ffa}{00126}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_af99d9b279c159c646025946159d18ffa}{cardioid}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00131}\mbox{\hyperlink{class_mandelbrot_a417f332f0733b903a2555fcf43dfd269}{00131}}   \textcolor{keyword}{const} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a417f332f0733b903a2555fcf43dfd269}{bulb}} = 0.0625;}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00133}00133   \textcolor{comment}{// coordinate plane}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00134}\mbox{\hyperlink{class_mandelbrot_ae4632c627b87adc1e0e452350f1e9501}{00134}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_ae4632c627b87adc1e0e452350f1e9501}{cxMin}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00136}\mbox{\hyperlink{class_mandelbrot_a15aa9230618b3d1bd2247c197fe066bf}{00136}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a15aa9230618b3d1bd2247c197fe066bf}{cxMax}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00137}00137 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00138}\mbox{\hyperlink{class_mandelbrot_abd43a32c69941ff1f00c40124928dab3}{00138}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_abd43a32c69941ff1f00c40124928dab3}{cyMin}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00140}\mbox{\hyperlink{class_mandelbrot_a56b71f4aeca5414c4cb6f9558677dc57}{00140}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a56b71f4aeca5414c4cb6f9558677dc57}{cyMax}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00142}00142   \textcolor{comment}{// image}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00143}\mbox{\hyperlink{class_mandelbrot_a71c0f47bd4bd309fb2d88a883c241e90}{00143}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a71c0f47bd4bd309fb2d88a883c241e90}{width}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00145}\mbox{\hyperlink{class_mandelbrot_a524cd6952496c3d4305d7f3acddc51f5}{00145}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a524cd6952496c3d4305d7f3acddc51f5}{height}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00147}\mbox{\hyperlink{class_mandelbrot_a1c5f52ae2590538339350b73b89b1049}{00147}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a1c5f52ae2590538339350b73b89b1049}{pX}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00149}\mbox{\hyperlink{class_mandelbrot_a85e8a342bedd96e1fbe64b9b63f296b0}{00149}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a85e8a342bedd96e1fbe64b9b63f296b0}{pY}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00150}00150 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00151}\mbox{\hyperlink{class_mandelbrot_a7991342d6c1e4fe8be44148063aa81ef}{00151}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a7991342d6c1e4fe8be44148063aa81ef}{pixWidth}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00153}\mbox{\hyperlink{class_mandelbrot_a24f05f1f8bebb7ac20e4f7b7388d8215}{00153}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a24f05f1f8bebb7ac20e4f7b7388d8215}{pixHeight}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00155}00155   \textcolor{comment}{// average}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00156}\mbox{\hyperlink{class_mandelbrot_a5101fef8c7a859b601abbe8b2b022a11}{00156}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a5101fef8c7a859b601abbe8b2b022a11}{a}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00158}\mbox{\hyperlink{class_mandelbrot_a4bb54da164616212dba373ed596bb261}{00158}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a4bb54da164616212dba373ed596bb261}{prevA}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00159}00159 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00163}\mbox{\hyperlink{class_mandelbrot_a3600e95f338add1d7579164fd963c3c6}{00163}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a3600e95f338add1d7579164fd963c3c6}{stripeDensity}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00164}00164 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00168}\mbox{\hyperlink{class_mandelbrot_a7479f8d9caea0db30f278ee396aee68e}{00168}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a7479f8d9caea0db30f278ee396aee68e}{iSkip}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00170}00170   \textcolor{comment}{// interpolated}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00171}\mbox{\hyperlink{class_mandelbrot_a9846a5c153d9c5fb94d3a7467b1596d9}{00171}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a9846a5c153d9c5fb94d3a7467b1596d9}{d}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00172}00172 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00173}00173   \textcolor{comment}{// boundary descriptor}}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00174}\mbox{\hyperlink{class_mandelbrot_a8a3adddf4b078028813104e4107adefe}{00174}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_mandelbrot_a8a3adddf4b078028813104e4107adefe}{de}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00175}\mbox{\hyperlink{class_mandelbrot_a1c8d355ef59b294424f9050d3424dc81}{00175}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_mandelbrot_a1c8d355ef59b294424f9050d3424dc81}{thin}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00176}00176 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00177}\mbox{\hyperlink{class_mandelbrot_ae7305890254986a39c4ec8690223ad3b}{00177}}   \mbox{\hyperlink{class_shading}{Shading}} *\mbox{\hyperlink{class_mandelbrot_ae7305890254986a39c4ec8690223ad3b}{shade}};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00178}00178 \};}
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{_mandelbrot_8h_source_l00180}00180 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//C\_\_\_MANDELBROT\_H}}
+
+\end{DoxyCode}

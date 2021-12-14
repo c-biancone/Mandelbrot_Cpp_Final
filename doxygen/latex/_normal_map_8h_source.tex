@@ -1,0 +1,43 @@
+\hypertarget{_normal_map_8h_source}{}\doxysection{Normal\+Map.\+h}
+\label{_normal_map_8h_source}\index{D:/Documents/Final/Mandelbrot\_Cpp\_Final/src/NormalMap.h@{D:/Documents/Final/Mandelbrot\_Cpp\_Final/src/NormalMap.h}}
+\mbox{\hyperlink{_normal_map_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef C\_\_\_NORMALMAP\_H}}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00002}00002 \textcolor{preprocessor}{\#define C\_\_\_NORMALMAP\_H}}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <complex>}}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00008}\mbox{\hyperlink{class_normal_map}{00008}} \textcolor{keyword}{class }\mbox{\hyperlink{class_normal_map}{NormalMap}}}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00010}00010  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00012}\mbox{\hyperlink{class_normal_map_aefc644ba19575d59e670567e440348bc}{00012}}   \mbox{\hyperlink{class_normal_map_aefc644ba19575d59e670567e440348bc}{\string~NormalMap}}();}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00014}\mbox{\hyperlink{class_normal_map_a94c572fadb2a824a506169ab085465a7}{00014}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_normal_map_a94c572fadb2a824a506169ab085465a7}{calculate}}() = 0;}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00022}00022   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_normal_map_a4dc30475f2a988068a3d710301ecdeca}{dot\_product}}(std::complex<double> u, std::complex<double> v);}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00024}00024   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_normal_map_ab5c9bb5adb18fe941df531b7522300a1}{get\_min\_val}}();}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00026}00026   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_normal_map_a59ab504c50a65375299bd8a0f30551af}{get\_max\_val}}();}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00028}00028   std::string \mbox{\hyperlink{class_normal_map_ae63892f543ca94efc6843c49468f8769}{get\_type}}();}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00030}00030  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00032}00032   \textcolor{keyword}{explicit} \mbox{\hyperlink{class_normal_map_ac2bfce8ace9915e75dd5772dd0737b9d}{NormalMap}}(std::string \mbox{\hyperlink{class_normal_map_ab9373770814eb86ea26cfcc867b6e80b}{type}});}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00034}00034  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00036}\mbox{\hyperlink{class_normal_map_aa563594a695fe88fb459255f7a1f73a7}{00036}}   \textcolor{keyword}{const} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_normal_map_aa563594a695fe88fb459255f7a1f73a7}{minMapVal}} = 0.0;}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00038}\mbox{\hyperlink{class_normal_map_a075e0636ad84480ccc5eb34e7a1f9f31}{00038}}   \textcolor{keyword}{const} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_normal_map_a075e0636ad84480ccc5eb34e7a1f9f31}{maxMapVal}} = 1.0;}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00040}\mbox{\hyperlink{class_normal_map_ab9373770814eb86ea26cfcc867b6e80b}{00040}}   std::string \mbox{\hyperlink{class_normal_map_ab9373770814eb86ea26cfcc867b6e80b}{type}};}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00041}00041 \};}
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_normal_map_8h_source_l00043}00043 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//C\_\_\_NORMALMAP\_H}}
+
+\end{DoxyCode}

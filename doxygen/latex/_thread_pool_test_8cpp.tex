@@ -1,0 +1,103 @@
+\hypertarget{_thread_pool_test_8cpp}{}\doxysection{D\+:/\+Documents/\+Final/\+Mandelbrot\+\_\+\+Cpp\+\_\+\+Final/src/\+Thread\+Pool\+Test.cpp File Reference}
+\label{_thread_pool_test_8cpp}\index{D:/Documents/Final/Mandelbrot\_Cpp\_Final/src/ThreadPoolTest.cpp@{D:/Documents/Final/Mandelbrot\_Cpp\_Final/src/ThreadPoolTest.cpp}}
+{\ttfamily \#include \char`\"{}Thread\+Pool.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for Thread\+Pool\+Test.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_thread_pool_test_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_thread_pool_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_thread_pool_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_thread_pool_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{ThreadPoolTest.cpp@{ThreadPoolTest.cpp}!main@{main}}
+\index{main@{main}!ThreadPoolTest.cpp@{ThreadPoolTest.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_thread_pool_test_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_thread_pool_test_8cpp_source}{Thread\+Pool\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00010}00010 \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00011}00011   srand(0);}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00012}00012   \textcolor{keyword}{auto} begin = chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00014}00014   \textcolor{keyword}{auto} numThreads = thread::hardware\_concurrency();}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00016}00016   \textcolor{keyword}{static} std::exception\_ptr globalExceptionPtr = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00018}00018   \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00019}00019   \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00020}00020     \mbox{\hyperlink{class_thread_pool}{ThreadPool}} pool(numThreads);}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00022}00022     cout << \textcolor{stringliteral}{"{}queueing up some random work\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00023}00023     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < 1000; i++)}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00024}00024     \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00025}00025       \textcolor{comment}{// pass in lambda of some random work}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00026}00026       pool.enqueue\_work([i]()}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00027}00027                         \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00028}00028                           \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00029}00029                           \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00030}00030                             \textcolor{keywordtype}{size\_t} x;}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00031}00031                             \textcolor{keywordtype}{size\_t} repetitions = 10 + (10 * (rand() \% 5));}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00032}00032                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} j = 0; j < repetitions; j++)}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00033}00033                             \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00034}00034                               x = i + (rand() \% 200); \textcolor{comment}{// pretty good chance of generating a few}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00035}00035                               \textcolor{comment}{// exceptions every few runs}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00036}00036                             \}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00037}00037                             \textcolor{keywordflow}{if} (x > 1000)}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00038}00038                             \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00039}00039                               stringstream id;}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00040}00040                               \textcolor{keywordtype}{id} << this\_thread::get\_id();}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00041}00041                               \textcolor{keywordflow}{throw} runtime\_error(\textcolor{keywordtype}{id}.str().c\_str());}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00042}00042                             \}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00043}00043                           \} \textcolor{keywordflow}{catch} (...)}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00044}00044                           \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00045}00045                             globalExceptionPtr = current\_exception();}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00046}00046                           \}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00047}00047                         \});}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00048}00048       \textcolor{keywordflow}{if} (globalExceptionPtr)}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00049}00049       \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00050}00050         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00051}00051         \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00052}00052           rethrow\_exception(globalExceptionPtr);}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00053}00053         \} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} exception \&e)}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00054}00054         \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00055}00055           cout << \textcolor{stringliteral}{"{}caught exception in job from thread: "{}} << e.what() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00056}00056         \}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00057}00057       \}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00058}00058     \}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00059}00059     \textcolor{keyword}{auto} end = chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00060}00060     \textcolor{keyword}{auto} duration = chrono::duration\_cast<chrono::milliseconds>(end -\/ begin);}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00061}00061     cout << \textcolor{stringliteral}{"{}pool duration = "{}} << duration.count() / 1000.f << \textcolor{stringliteral}{"{} seconds\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00062}00062   \} \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} exception \&ex)}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00063}00063   \{}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00064}00064     cout << \textcolor{stringliteral}{"{}caught exception from thread pool: "{}} << ex.what() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00065}00065   \}}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00067}00067   \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{_thread_pool_test_8cpp_l00068}00068 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{_thread_pool_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
