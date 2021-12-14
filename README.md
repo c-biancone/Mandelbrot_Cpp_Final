@@ -95,7 +95,7 @@ To view the output `.ppm` files and convert to `.png`:
    ```sh
    git clone https://github.com/c-biancone/Mandelbrot_Cpp_Final.git
    ```
-2. Open the directory from within CLion and build
+2. Open the directory as a new C++17 project from within CLion and build
 
 
 <!-- USAGE EXAMPLES -->
