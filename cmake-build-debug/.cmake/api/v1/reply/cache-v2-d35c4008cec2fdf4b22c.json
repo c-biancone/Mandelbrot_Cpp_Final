@@ -807,7 +807,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C__"
+			"value" : "Gigabrot_Cpp"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1268,6 +1268,78 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[-fopenmp][/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/libgomp.dll.a][v4.5()]"
+		},
+		{
+			"name" : "Gigabrot_Cpp_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/cygdrive/d/Documents/RIT/Semester_4/C++/Final/cmake-build-debug"
+		},
+		{
+			"name" : "Gigabrot_Cpp_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Gigabrot_Cpp_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/cygdrive/d/Documents/RIT/Semester_4/C++/Final"
+		},
+		{
+			"name" : "Gigabrot__BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/cygdrive/d/Documents/RIT/Semester_4/C++/Final/cmake-build-debug"
+		},
+		{
+			"name" : "Gigabrot__IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Gigabrot__SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/cygdrive/d/Documents/RIT/Semester_4/C++/Final"
 		},
 		{
 			"name" : "OpenMP_COMPILE_RESULT_CXX_fopenmp",

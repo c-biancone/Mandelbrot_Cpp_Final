@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C__.exe"
+			"path" : "Gigabrot_Cpp.exe"
 		},
 		{
-			"path" : "C__.pdb"
+			"path" : "Gigabrot_Cpp.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -88,7 +88,7 @@
 			]
 		}
 	],
-	"id" : "C__::@6890427a1f51a3e7e1df",
+	"id" : "Gigabrot_Cpp::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -104,8 +104,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "C__",
-	"nameOnDisk" : "C__.exe",
+	"name" : "Gigabrot_Cpp",
+	"nameOnDisk" : "Gigabrot_Cpp.exe",
 	"paths" : 
 	{
 		"build" : ".",

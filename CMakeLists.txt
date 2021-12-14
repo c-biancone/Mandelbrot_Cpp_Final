@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(C__)
+project(Gigabrot_Cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -14,10 +14,10 @@ if (OPENMP_FOUND)
     set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
 endif()
 
-add_executable(C__
+add_executable(Gigabrot_Cpp
         #executables
-        src/main.cpp
-            #ThreadPoolTest.cpp
+            src/main.cpp
+            #src/ThreadPoolTest.cpp
 
         #headers
         src/PPM.cpp
