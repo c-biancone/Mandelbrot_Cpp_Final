@@ -16,28 +16,28 @@ endif()
 
 add_executable(C__
         #executables
-            main.cpp
+        src/main.cpp
             #ThreadPoolTest.cpp
 
         #headers
-            PPM.cpp
-            PPM.h
-            Mandelbrot.cpp
-            Colorization.cpp
-            Colorization.h
-            Shading.cpp
-            Shading.h
-            InsideColor.cpp
-            InsideColor.h
-            LineColor.cpp
-            LineColor.h
-            Striping.cpp
-            Striping.h
-            NormalMap.cpp
-            NormalMap.h
-            Neumorphic.cpp
-            Neumorphic.h
-            ThreadPool.cpp
-            ThreadPool.h
-            UnboundedQueue.h
+        src/PPM.cpp
+        src/PPM.h
+        src/Mandelbrot.cpp
+        src/Colorization.cpp
+        src/Colorization.h
+        src/Shading.cpp
+        src/Shading.h
+        src/InsideColor.cpp
+        src/InsideColor.h
+        src/LineColor.cpp
+        src/LineColor.h
+        src/Striping.cpp
+        src/Striping.h
+        src/NormalMap.cpp
+        src/NormalMap.h
+        src/Neumorphic.cpp
+        src/Neumorphic.h
+        src/ThreadPool.cpp
+        src/ThreadPool.h
+        src/UnboundedQueue.h
         )

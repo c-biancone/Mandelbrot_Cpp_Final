@@ -61,71 +61,71 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_C__: phony || CMakeFiles/C__.dir
 
-build CMakeFiles/C__.dir/main.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/main.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/main.cpp.o.d
+build CMakeFiles/C__.dir/src/main.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/main.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/main.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/PPM.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/PPM.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/PPM.cpp.o.d
+build CMakeFiles/C__.dir/src/PPM.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/PPM.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/PPM.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/Mandelbrot.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/Mandelbrot.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/Mandelbrot.cpp.o.d
+build CMakeFiles/C__.dir/src/Mandelbrot.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Mandelbrot.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/Mandelbrot.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/Colorization.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/Colorization.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/Colorization.cpp.o.d
+build CMakeFiles/C__.dir/src/Colorization.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Colorization.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/Colorization.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/Shading.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/Shading.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/Shading.cpp.o.d
+build CMakeFiles/C__.dir/src/Shading.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Shading.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/Shading.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/InsideColor.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/InsideColor.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/InsideColor.cpp.o.d
+build CMakeFiles/C__.dir/src/InsideColor.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/InsideColor.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/InsideColor.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/LineColor.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/LineColor.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/LineColor.cpp.o.d
+build CMakeFiles/C__.dir/src/LineColor.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/LineColor.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/LineColor.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/Striping.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/Striping.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/Striping.cpp.o.d
+build CMakeFiles/C__.dir/src/Striping.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Striping.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/Striping.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/NormalMap.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/NormalMap.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/NormalMap.cpp.o.d
+build CMakeFiles/C__.dir/src/NormalMap.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/NormalMap.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/NormalMap.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/Neumorphic.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/Neumorphic.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/Neumorphic.cpp.o.d
+build CMakeFiles/C__.dir/src/Neumorphic.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/Neumorphic.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/Neumorphic.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
-build CMakeFiles/C__.dir/ThreadPool.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/ThreadPool.cpp || cmake_object_order_depends_target_C__
-  DEP_FILE = CMakeFiles/C__.dir/ThreadPool.cpp.o.d
+build CMakeFiles/C__.dir/src/ThreadPool.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/Documents/RIT/Semester_4/C++/Final/src/ThreadPool.cpp || cmake_object_order_depends_target_C__
+  DEP_FILE = CMakeFiles/C__.dir/src/ThreadPool.cpp.o.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles/C__.dir
-  OBJECT_FILE_DIR = CMakeFiles/C__.dir
+  OBJECT_FILE_DIR = CMakeFiles/C__.dir/src
 
 
 # =============================================================================
@@ -135,7 +135,7 @@ build CMakeFiles/C__.dir/ThreadPool.cpp.o: CXX_COMPILER__C___Debug /cygdrive/d/D
 #############################################
 # Link the executable C__.exe
 
-build C__.exe: CXX_EXECUTABLE_LINKER__C___Debug CMakeFiles/C__.dir/main.cpp.o CMakeFiles/C__.dir/PPM.cpp.o CMakeFiles/C__.dir/Mandelbrot.cpp.o CMakeFiles/C__.dir/Colorization.cpp.o CMakeFiles/C__.dir/Shading.cpp.o CMakeFiles/C__.dir/InsideColor.cpp.o CMakeFiles/C__.dir/LineColor.cpp.o CMakeFiles/C__.dir/Striping.cpp.o CMakeFiles/C__.dir/NormalMap.cpp.o CMakeFiles/C__.dir/Neumorphic.cpp.o CMakeFiles/C__.dir/ThreadPool.cpp.o
+build C__.exe: CXX_EXECUTABLE_LINKER__C___Debug CMakeFiles/C__.dir/src/main.cpp.o CMakeFiles/C__.dir/src/PPM.cpp.o CMakeFiles/C__.dir/src/Mandelbrot.cpp.o CMakeFiles/C__.dir/src/Colorization.cpp.o CMakeFiles/C__.dir/src/Shading.cpp.o CMakeFiles/C__.dir/src/InsideColor.cpp.o CMakeFiles/C__.dir/src/LineColor.cpp.o CMakeFiles/C__.dir/src/Striping.cpp.o CMakeFiles/C__.dir/src/NormalMap.cpp.o CMakeFiles/C__.dir/src/Neumorphic.cpp.o CMakeFiles/C__.dir/src/ThreadPool.cpp.o
   FLAGS = -fopenmp -g
   LINK_FLAGS = -Wl,--enable-auto-import
   OBJECT_DIR = CMakeFiles/C__.dir
