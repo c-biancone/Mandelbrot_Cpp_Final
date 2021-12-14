@@ -91,3 +91,7 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 Browse.VC.opendb
+
+#doxygen source
+/doxygen/html/*
+/doxygen/latex/*
