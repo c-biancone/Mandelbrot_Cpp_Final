@@ -27,7 +27,7 @@
     <br />
     <!-- <a href="https://github.com/github_username/repo_name">View Demo</a> -->
     ·
-    <a href="https://github.com/pinecone19/Gigabrot/issues">Report Bug / Request Feature</a>
+    <a href="https://github.com/c-biancone/Mandelbrot_Cpp_Final/issues">Report Bug / Request Feature</a>
     ·
   </p>
 </p>
@@ -85,7 +85,7 @@ To get a local copy up and running follow these simple steps:
 * C++17
 * CMake 3.21
 
-To view the output `.ppm` files:
+To view the output `.ppm` files and convert to `.png`:
 * [Netpbm Viewer](http://paulcuth.me.uk/netpbm-viewer/)
 
 
