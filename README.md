@@ -20,7 +20,7 @@
 
 <!-- DESCRIPTION -->
   <p align="left">
-    This is a C++ implementation of my original Gigabrot project, put into this repo for ease of submission. Its goal is to take in user-specified parameters and efficiently produce a PPM image render of the Mandelbrot set with stripe-average colorization and a pseudo-neumorphic normal mapping effect. This project also demonstrates various fundamental aspects of coding using the C++ language.
+    This is a C++ implementation of my original Gigabrot project, put into this repo for ease of submission. Its goal is to take in user-specified parameters and efficiently produce a PPM image render of the Mandelbrot set with stripe-average colorization and a pseudo-neumorphic normal mapping effect. This project also demonstrates various fundamental aspects of coding using the C++ language. Sample output image shown above.
     <br />
     <a href="#usage"><strong>Jump to Usage»</strong></a>
     <br />
@@ -122,8 +122,6 @@ Chris Biancone - [email](chris.biancone@gmail.com)
 
 Project Link: [https://github.com/pinecone19/Gigabrot](https://github.com/c-biancone/Mandelbrot_Cpp_Final)
 
-
-</a>
 ### Demonstrated C++ Fundamentals
 #### For Reference
 * Class Inheritance
