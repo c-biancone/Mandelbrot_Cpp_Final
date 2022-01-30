@@ -1,9 +1,0 @@
-<map id="Mandelbrot::colorize_bw" name="Mandelbrot::colorize_bw">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,168,108"/>
-<area shape="rect" id="node2" href="$class_inside_color.html#ac117ff57285f151033daec1899bf7240" title=" " alt="" coords="216,5,385,32"/>
-<area shape="rect" id="node3" href="$class_line_color.html#a1c7f8b57b43cc635ff48078fe7160294" title=" " alt="" coords="221,56,380,83"/>
-<area shape="rect" id="node4" href="$class_striping.html#aea157fafe5303d41bba7bbf7887317c6" title=" " alt="" coords="226,107,375,133"/>
-<area shape="rect" id="node7" href="$class_mandelbrot.html#a9153b2a51f860815d7e374a16d9198b6" title=" " alt="" coords="236,157,365,184"/>
-<area shape="rect" id="node5" href="$class_neumorphic.html#a64c60604ca3389b60457ddaa16842459" title=" " alt="" coords="433,107,584,133"/>
-<area shape="rect" id="node6" href="$class_normal_map.html#a4dc30475f2a988068a3d710301ecdeca" title=" " alt="" coords="632,107,796,133"/>
-</map>

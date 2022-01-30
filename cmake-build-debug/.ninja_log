@@ -11,3 +11,15 @@
 22	1209	6611565491004350	CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.obj	6274d1c10c43706b
 71	1397	6611565492879320	CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.obj	803b3e8ede312026
 0	1405	6611565492879320	CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.obj	915949a52b08a1ce
+19	663	6652228550961758	CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.obj	d767a80abc9c8bd
+65	664	6652228550956741	CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.obj	5f0b705b32f37816
+75	685	6652228551181743	CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.obj	d4c8ce608d6aeb83
+55	689	6652228551211750	CMakeFiles/Gigabrot_Cpp.dir/src/Shading.cpp.obj	6f8627246284c517
+45	880	6652228553151757	CMakeFiles/Gigabrot_Cpp.dir/src/Striping.cpp.obj	dd50ddd5b398cfca
+108	952	6652228553876761	CMakeFiles/Gigabrot_Cpp.dir/src/Neumorphic.cpp.obj	de8f7128cb0be78a
+97	1004	6652228554376757	CMakeFiles/Gigabrot_Cpp.dir/src/NormalMap.cpp.obj	7b5b1dee30894057
+36	1131	6652228555661727	CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.obj	1305f51aa2b59dd6
+28	1145	6652228555791766	CMakeFiles/Gigabrot_Cpp.dir/src/PPM.cpp.obj	aaa001fbdb9ba074
+85	1440	6652228558736754	CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.obj	7b36b365c8b0dc63
+3	1486	6652228559206734	CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.obj	8d0efff4f2920f51
+1486	1672	6652228561046720	Gigabrot_Cpp.exe	ded36ae90ae6db0e
