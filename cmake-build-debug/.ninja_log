@@ -1,5 +1,5 @@
 # ninja log v5
-3254	4031	1639445749730677400	Gigabrot_Cpp.exe	ccf5ec010f2f92ca
+1405	1536	6611565494129244	Gigabrot_Cpp.exe	ded36ae90ae6db0e
 38	614	6611565484754288	CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.obj	e5f858c7999dce11
 30	621	6611565484754288	CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.obj	15249e1c3a8205bd
 46	631	6611565485066774	CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.obj	da99ecb3b6082b14
@@ -11,4 +11,3 @@
 22	1209	6611565491004350	CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.obj	6274d1c10c43706b
 71	1397	6611565492879320	CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.obj	803b3e8ede312026
 0	1405	6611565492879320	CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.obj	915949a52b08a1ce
-1405	1536	6611565494129244	Gigabrot_Cpp.exe	ded36ae90ae6db0e

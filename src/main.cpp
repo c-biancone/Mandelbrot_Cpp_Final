@@ -25,7 +25,7 @@ int main()
     istringstream is(line);
 
     char dummy;
-    if (!(is >> width) || (is >> ws && is.get(dummy)) || !(width > 0))
+    if (!(is >> width) || (is >> ws && is.get(dummy)) || width <= 0)
     {
       cout << "Invalid input. Try again:\n";
     } else {

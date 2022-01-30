@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Documents/Final/Mandelbrot_Cpp_Final/cmake-build-debug",
-		"source" : "D:/Documents/Final/Mandelbrot_Cpp_Final"
+		"build" : "D:/Documents/Gigabrot_Threaded/cmake-build-debug",
+		"source" : "D:/Documents/Gigabrot_Threaded"
 	},
 	"version" : 
 	{

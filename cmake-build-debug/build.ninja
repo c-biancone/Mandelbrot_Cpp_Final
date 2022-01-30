@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/Documents/Final/Mandelbrot_Cpp_Final/cmake-build-debug/
+cmake_ninja_workdir = D$:/Documents/Gigabrot_Threaded/cmake-build-debug/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\Documents\Final\Mandelbrot_Cpp_Final\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\Documents\Gigabrot_Threaded\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -60,7 +60,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_Gigabrot_Cpp: phony || CMakeFiles/Gigabrot_Cpp.dir
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/main.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/main.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\main.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -68,7 +68,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/main.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_D
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/PPM.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/PPM.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/PPM.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/PPM.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\PPM.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -76,7 +76,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/PPM.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_De
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Mandelbrot.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/Mandelbrot.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Mandelbrot.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -84,7 +84,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/Mandelbrot.cpp.obj: CXX_COMPILER__Gigabrot
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Colorization.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/Colorization.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Colorization.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -92,7 +92,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/Colorization.cpp.obj: CXX_COMPILER__Gigabr
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Shading.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Shading.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/Shading.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/Shading.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Shading.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -100,7 +100,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/Shading.cpp.obj: CXX_COMPILER__Gigabrot_Cp
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/InsideColor.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/InsideColor.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\InsideColor.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -108,7 +108,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/InsideColor.cpp.obj: CXX_COMPILER__Gigabro
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/LineColor.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/LineColor.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\LineColor.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -116,7 +116,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/LineColor.cpp.obj: CXX_COMPILER__Gigabrot_
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Striping.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Striping.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/Striping.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/Striping.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Striping.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -124,7 +124,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/Striping.cpp.obj: CXX_COMPILER__Gigabrot_C
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/NormalMap.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/NormalMap.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/NormalMap.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/NormalMap.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\NormalMap.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -132,7 +132,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/NormalMap.cpp.obj: CXX_COMPILER__Gigabrot_
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/Neumorphic.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/Neumorphic.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/Neumorphic.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/Neumorphic.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\Neumorphic.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -140,7 +140,7 @@ build CMakeFiles/Gigabrot_Cpp.dir/src/Neumorphic.cpp.obj: CXX_COMPILER__Gigabrot
   TARGET_COMPILE_PDB = CMakeFiles\Gigabrot_Cpp.dir\
   TARGET_PDB = Gigabrot_Cpp.pdb
 
-build CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Final/Mandelbrot_Cpp_Final/src/ThreadPool.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
+build CMakeFiles/Gigabrot_Cpp.dir/src/ThreadPool.cpp.obj: CXX_COMPILER__Gigabrot_Cpp_Debug D$:/Documents/Gigabrot_Threaded/src/ThreadPool.cpp || cmake_object_order_depends_target_Gigabrot_Cpp
   DEP_FILE = CMakeFiles\Gigabrot_Cpp.dir\src\ThreadPool.cpp.obj.d
   FLAGS = -fopenmp -g -Ofast -std=c++17 -lstdc++ -std=gnu++17
   OBJECT_DIR = CMakeFiles\Gigabrot_Cpp.dir
@@ -172,7 +172,7 @@ build Gigabrot_Cpp.exe: CXX_EXECUTABLE_LINKER__Gigabrot_Cpp_Debug CMakeFiles/Gig
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\Documents\Final\Mandelbrot_Cpp_Final\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Documents\Final\Mandelbrot_Cpp_Final -BD:\Documents\Final\Mandelbrot_Cpp_Final\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D D:\Documents\Gigabrot_Threaded\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Documents\Gigabrot_Threaded -BD:\Documents\Gigabrot_Threaded\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -190,7 +190,7 @@ build Gigabrot_Cpp: phony Gigabrot_Cpp.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/Documents/Final/Mandelbrot_Cpp_Final/cmake-build-debug
+# Folder: D:/Documents/Gigabrot_Threaded/cmake-build-debug
 
 build all: phony Gigabrot_Cpp.exe
 

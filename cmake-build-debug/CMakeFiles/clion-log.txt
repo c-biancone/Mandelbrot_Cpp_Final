@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3/bin/ninja/win/ninja.exe" -G Ninja D:\Documents\Final\Mandelbrot_Cpp_Final
+"C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3/bin/ninja/win/ninja.exe" -G Ninja D:\Documents\Gigabrot_Threaded
 -- The C compiler identification is GNU 11.2.0
 -- The CXX compiler identification is GNU 11.2.0
 -- Detecting C compiler ABI info
@@ -16,4 +16,4 @@
 -- Found OpenMP: TRUE (found version "4.5")  
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/Documents/Final/Mandelbrot_Cpp_Final/cmake-build-debug
+-- Build files have been written to: D:/Documents/Gigabrot_Threaded/cmake-build-debug

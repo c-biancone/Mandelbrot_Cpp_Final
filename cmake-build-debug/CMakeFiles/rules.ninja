@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__Gigabrot_Cpp_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Documents\Final\Mandelbrot_Cpp_Final -BD:\Documents\Final\Mandelbrot_Cpp_Final\cmake-build-debug
+  command = "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Documents\Gigabrot_Threaded -BD:\Documents\Gigabrot_Threaded\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
