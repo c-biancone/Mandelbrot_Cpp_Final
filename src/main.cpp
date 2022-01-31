@@ -69,7 +69,14 @@ int main()
 
   // set up container for image row data
   vector<unsigned char> row{}; // array needs compile-time const length
-  row.resize(width * 3); // avoid constant resizing by allocating up front
+  bool ppmTrue = (pgm.get_magic() == "P6\n");
+  if (ppmTrue)
+  {
+    // if rgb need 3x row length
+    row.resize(width * 3);  // avoid constant resizing by allocating up front
+  } else {
+    row.resize(width);
+  }
 
   cout << "Rendering row by row:\n";
 
@@ -85,12 +92,18 @@ int main()
   {
     for (size_t pX = 0; pX < width; pX++)
     {
-      size_t subPixel = 3 * pX;
       gigabrot.current_pixel(pX, pY);
       gigabrot.get_c();
       gigabrot.iterate();
-      row[subPixel + 2] = row[subPixel + 1] = row[subPixel] =
-          gigabrot.colorize_bw();
+
+      if (ppmTrue) {
+        size_t subPixel = 3 * pX;
+        row[subPixel + 2] = row[subPixel + 1] = row[subPixel] =
+            gigabrot.colorize_bw();
+      } else {
+        row[pX] = gigabrot.colorize_bw();
+      }
+
       gigabrot.reset();
     }
     {

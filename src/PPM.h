@@ -71,6 +71,16 @@ class PPM
   void write_header();
 
   /**
+   * Set magic number
+   */
+  void set_magic(std::string magicIn);
+
+  /**
+   * Get magic number
+   */
+  std::string get_magic();
+
+  /**
    * Set width of PPM image
    * @param widthIn
    */
@@ -99,7 +109,7 @@ class PPM
   /**
    * Determines type of PPM
    */
-  const std::string magic = "P6\n";
+  std::string magic = "";
 
   const std::string pixMaxVal = "255\n";
 

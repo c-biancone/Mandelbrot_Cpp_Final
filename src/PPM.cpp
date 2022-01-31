@@ -14,6 +14,15 @@ PPM::PPM(int width, int height) : width(width), height(height)
 PPM::PPM(const std::string &fileName, int width, int height) : width(width), height(height)
 {
   outputDirectory = "..\\output\\";
+  size_t foundPGM = fileName.find(".pgm");
+  size_t foundPPM = fileName.find(".ppm");
+  if (foundPGM!=string::npos) {
+    set_magic("P5\n");
+  } else if (foundPPM!=string::npos) {
+    set_magic("P6\n");
+  } else {
+    cout << "Invalid file extension.\n";
+  }
   this->fileName = outputDirectory + fileName;
   subPixel = width * 3;
 }
@@ -52,6 +61,16 @@ void PPM::write_header()
   string lengthStr = to_string(this->height);
   header << magic << widthStr << " " << lengthStr << "\n" << comment << "\n" << pixMaxVal;
   image << header.rdbuf();
+}
+
+void PPM::set_magic(std::string magicIn)
+{
+  magic = std::move(magicIn);
+}
+
+std::string PPM::get_magic()
+{
+  return magic;
 }
 
 void PPM::set_width(int widthIn)
