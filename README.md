@@ -101,7 +101,7 @@ To view the output `.ppm` files and convert to `.png`:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-1. In CLion, hit the play button to build and run the code. In the terminal, enter the image resolution when prompted. This value is automatically checked and copied so that the image is square for this implementation. Enter the desired filename when prompted.
+1. In CLion, hit the play button to build and run the code. In the terminal, enter the image resolution when prompted. This value is automatically checked and copied so that the image is square for this implementation. Enter the desired filename when prompted. The image type (PPM/PGM) is determined by the file extension you input. PPM images support RGB color but are 3x larger accordingly.
 
 2. Once the code has finished running, the output can be found within the `output` directory. A 1280 x 1280 image is generated in ~2.5s on my laptop, and scales as expected according to image size.
 
