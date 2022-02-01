@@ -67,9 +67,10 @@ int main()
   }
   pgm.write_header();
 
+  bool ppmTrue = (pgm.get_magic() == "P6\n");
+  /*
   // set up container for image row data
   vector<unsigned char> row{}; // array needs compile-time const length
-  bool ppmTrue = (pgm.get_magic() == "P6\n");
   if (ppmTrue)
   {
     // if rgb need 3x row length
@@ -77,6 +78,16 @@ int main()
   } else {
     row.resize(width);
   }
+  */
+
+  int widthNew;
+  if (ppmTrue)
+  {
+    widthNew = width * 3;
+  } else {
+    widthNew = width;
+  }
+  unsigned char img[widthNew][height];
 
   cout << "Rendering row by row:\n";
 
@@ -85,13 +96,16 @@ int main()
   Mandelbrot gigabrot(width, height);
   cout << gigabrot;
 
-  // unsigned int numThreads = thread::hardware_concurrency();
-  // cout << "numThreads: " << numThreads << "\n";
+  // spool up the thread pool
+  unsigned int numThreads = thread::hardware_concurrency();
+  cout << "numThreads: " << numThreads << "\n";
+  ThreadPool pool(numThreads);
 
   for (size_t pY = 0; pY < height; pY++)
   {
     for (size_t pX = 0; pX < width; pX++)
     {
+      /*
       gigabrot.current_pixel(pX, pY);
       gigabrot.get_c();
       gigabrot.iterate();
@@ -105,13 +119,28 @@ int main()
       }
 
       gigabrot.reset();
+      */
+      pool.enqueue_work([&gigabrot, pX, pY, ppmTrue, &img](){
+                          gigabrot.current_pixel(pX, pY);
+                          gigabrot.get_c();
+                          gigabrot.iterate();
+
+                          if (ppmTrue) {
+                            size_t subPixel = 3 * pX;
+                            img[pY][subPixel+2] = img[pY][subPixel+1] = img[pY][subPixel] = gigabrot.colorize_bw();
+                          } else {
+                            img[pY][pX] = gigabrot.colorize_bw();
+                          }
+                          gigabrot.reset();
+      });
     }
+    /*
     {
       // implemented due to possibility of having huge image, keep memory usage low
       // might be causing the issues with parallelization, ruining the embarrassingly parallel
       // aspect of the Mandelbrot set
       pgm.write_row(row);
-    }
+    }*/
   }
 
   pgm.close();

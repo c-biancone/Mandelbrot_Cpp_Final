@@ -66,6 +66,14 @@ class PPM
   }
 
   /**
+   * Print entire 2D array to PPM file
+   */
+   void write_array(const unsigned char &img)
+   {
+     for (size_t y; y = 0; )
+   }
+
+  /**
    * Print header data to PPM file
    */
   void write_header();
