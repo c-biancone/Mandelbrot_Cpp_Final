@@ -1,14 +1,14 @@
-C:\Users\Chris\AppData\Local\JetBrains\CLion2021.3\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/Documents/Mandelbrot_Project/Gigabrot/Mandelbrot_Cpp_Final
--- The C compiler identification is GNU 9.3.0
--- The CXX compiler identification is GNU 9.3.0
+"C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe" -G Ninja -S D:\Documents\Gigabrot_Threaded -B D:\Documents\Gigabrot_Threaded\cmake-build-debug
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/gcc.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++.exe - skipped
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Found OpenMP_C: -fopenmp (found version "4.5") 
@@ -16,4 +16,4 @@ C:\Users\Chris\AppData\Local\JetBrains\CLion2021.3\cygwin_cmake\bin\cmake.exe -D
 -- Found OpenMP: TRUE (found version "4.5")  
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/d/Documents/Mandelbrot_Project/Gigabrot/Mandelbrot_Cpp_Final/cmake-build-debug
+-- Build files have been written to: D:/Documents/Gigabrot_Threaded/cmake-build-debug

@@ -68,9 +68,22 @@ class PPM
   /**
    * Print entire 2D array to PPM file
    */
-   void write_array(const unsigned char &img)
+   void write_array(unsigned char **img)
    {
-     for (size_t y; y = 0; )
+     bool isPPM = (magic == "P6\n");
+     for (size_t y = 0; y < height; y++) {
+       if (isPPM) {
+         for (size_t x = 0; x < width * 3; x++) {
+           image << img[y][x];
+         }
+       } else {
+         for (size_t x = 0; x < width; x++) {
+           image << img[y][x];
+         }
+       }
+//       image << std::endl;
+     }
+     std::flush(image);
    }
 
   /**

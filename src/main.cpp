@@ -87,7 +87,12 @@ int main()
   } else {
     widthNew = width;
   }
-  unsigned char img[widthNew][height];
+
+  unsigned char ** img;
+  img = new unsigned char *[height];
+  for (size_t i = 0; i < height; i ++) {
+    img[i] = new unsigned char[widthNew];
+  }
 
   cout << "Rendering row by row:\n";
 
@@ -120,6 +125,20 @@ int main()
 
       gigabrot.reset();
       */
+
+      // test functionality of array write
+//      gigabrot.current_pixel(pX, pY);
+//      gigabrot.get_c();
+//      gigabrot.iterate();
+
+//      if (ppmTrue) {
+//        size_t subPixel = 3 * pX;
+//        img[pY][subPixel+2] = img[pY][subPixel+1] = img[pY][subPixel] = gigabrot.colorize_bw();
+//      } else {
+//        img[pY][pX] = gigabrot.colorize_bw();
+//      }
+//      gigabrot.reset();
+
       pool.enqueue_work([&gigabrot, pX, pY, ppmTrue, &img](){
                           gigabrot.current_pixel(pX, pY);
                           gigabrot.get_c();
@@ -143,7 +162,14 @@ int main()
     }*/
   }
 
+  pgm.write_array(img);
+
   pgm.close();
+
+  for (size_t i = 0; i < height; i++) {
+    delete[] img[i];
+  }
+  delete img;
 
   auto end = chrono::steady_clock::now();
   cout << "Time elapsed: "
